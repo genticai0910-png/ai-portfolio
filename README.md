@@ -1,4 +1,4 @@
-# Gabe — AI Infrastructure & Automation Portfolio
+# Gabe | AI Infrastructure & Automation Portfolio
 
 > **Building production-grade AI systems that generate revenue at zero marginal cost.**
 
@@ -23,16 +23,16 @@ I design, deploy, and operate end-to-end AI infrastructure from fine-tuned local
 
 ## Featured Projects
 
-### [Arachne Swarm — AI Agent Orchestration Dashboard](projects/arachne-swarm.md)
+### [Arachne Swarm: AI Agent Orchestration Dashboard](projects/arachne-swarm.md)
 Full-stack agent orchestration platform. Real-time spider web visualization, Kanban pipeline management, budget controls, multi-tenant isolation. Next.js + WebSocket + PostgreSQL. **Live at [swarm.gentic.pro](https://swarm.gentic.pro)**
 
-### [Arachne Claw — Self-Serve AI Agent Sandbox](projects/arachne-claw.md)
+### [Arachne Claw: Self-Serve AI Agent Sandbox](projects/arachne-claw.md)
 $50/mo product: 7 AI agents (research, lead scoring, competitor intel, content briefs, outreach, reviews, SEO audit). Dashboard + email delivery + REST API. Stripe billing, automated provisioning, upgrade funnel to enterprise tiers. **Live at [swarm.gentic.pro/claw](https://swarm.gentic.pro/claw)**
 
-### [Markspace Protocol — Multi-Agent Coordination](projects/markspace.md)
+### [Markspace Protocol: Multi-Agent Coordination](projects/markspace.md)
 Stigmergy-based coordination protocol replacing direct webhook messaging between AI agents. Guard-enforced scopes, 4-tier autonomy model (autonomous / notify / approval / blocked), conflict resolution, peer sync via HMAC. Novel architecture for production agent fleets.
 
-### [VSAI Intent Classifier — Custom Fine-Tuned Model](projects/vsai-intent-model.md)
+### [VSAI Intent Classifier: Custom Fine-Tuned Model](projects/vsai-intent-model.md)
 Fine-tuned **Qwen 2.5 1.5B with LoRA** for real-time voice call intent classification. 9-class model running locally on MLX at $0/month with Ollama failover. 3-tier cascade: MLX, Ollama, VPS.
 
 ### [Hybrid Compute Architecture](architecture/hybrid-compute.md)
@@ -95,12 +95,12 @@ Dual-deployment web scraping: Mac Mini (native + MCP server) + VPS Docker (HTTP 
 
 These systems power three active businesses:
 
-- **DealiQ** — AI-powered real estate investment (Phoenix, Vegas, AZ, UT) processing 100+ leads/week
-- **Gentic AI** — AI automation platform for local SMBs ($1,497-$2,497/mo tiers, $57K MRR target)
-- **VoiceScheduleAI** — AI appointment scheduling with custom voice agents
+- **DealiQ**. AI-powered real estate investment (Phoenix, Vegas, AZ, UT) processing 100+ leads/week
+- **Gentic AI**. AI automation platform for local SMBs ($1,497-$2,497/mo tiers, $57K MRR target)
+- **VoiceScheduleAI**. AI appointment scheduling with custom voice agents
 
 Plus one SaaS product:
-- **Arachne Claw** — $50/mo self-serve AI agent sandbox (top-of-funnel for Gentic AI)
+- **Arachne Claw**. $50/mo self-serve AI agent sandbox (top-of-funnel for Gentic AI)
 
 ---
 
