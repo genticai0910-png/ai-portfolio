@@ -1,10 +1,50 @@
-# Gabe | AI Infrastructure & Automation Portfolio
+<div align="center">
 
-> **Building production-grade AI systems that generate revenue at zero marginal cost.**
+# Gabe | AI Infrastructure & Automation
 
-I design, deploy, and operate end-to-end AI infrastructure from fine-tuned local models to multi-platform voice agents to full lead-processing pipelines. Everything below is **live in production**, processing real leads and serving real customers.
+![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-50%2B_workflows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![MLX](https://img.shields.io/badge/MLX-Apple_Silicon-000000?style=flat-square&logo=apple&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-white?style=flat-square)
+
+**Building production-grade AI systems that generate revenue at zero marginal cost.**
+
+[![Arachne Claw](https://img.shields.io/badge/Arachne_Claw-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro/claw)
+[![Arachne Swarm](https://img.shields.io/badge/Arachne_Swarm-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro)
+[![Telegram Bot](https://img.shields.io/badge/Clue_Bot-Live-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/[CLUE_BOT])
+
+</div>
 
 ---
+
+<table>
+<tr>
+<td width="25%" align="center">
+<img src="https://img.shields.io/badge/96.6%25-accuracy-22c55e?style=for-the-badge" /><br/>
+<sub>Custom Intent Model</sub>
+</td>
+<td width="25%" align="center">
+<img src="https://img.shields.io/badge/$0%2Fmo-inference-22c55e?style=for-the-badge" /><br/>
+<sub>Local ML Inference</sub>
+</td>
+<td width="25%" align="center">
+<img src="https://img.shields.io/badge/100%2B-leads%2Fweek-22c55e?style=for-the-badge" /><br/>
+<sub>Automated Pipeline</sub>
+</td>
+<td width="25%" align="center">
+<img src="https://img.shields.io/badge/%3C2%25-infra_cost-22c55e?style=for-the-badge" /><br/>
+<sub>Of Revenue Per Client</sub>
+</td>
+</tr>
+</table>
+
+---
+
+I design, deploy, and operate end-to-end AI infrastructure from fine-tuned local models to multi-platform voice agents to full lead-processing pipelines. Everything below is **live in production**, processing real leads and serving real customers.
 
 ## What I Build
 
@@ -150,6 +190,47 @@ Real outcomes, real numbers. No demos.
 
 ---
 
+---
+
+## Tech Stack
+
+<div align="center">
+
+#### Models & Inference
+![Qwen](https://img.shields.io/badge/Qwen_2.5-LoRA-FF6F00?style=flat-square)
+![MLX](https://img.shields.io/badge/MLX-Apple_Silicon-000?style=flat-square&logo=apple&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-Local-white?style=flat-square)
+![Grok](https://img.shields.io/badge/xAI-Grok-000?style=flat-square)
+![Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?style=flat-square&logo=google&logoColor=white)
+![Claude](https://img.shields.io/badge/Anthropic-Claude-d4a574?style=flat-square)
+
+#### Voice & Communication
+![Bland AI](https://img.shields.io/badge/Bland_AI-Voice-5046E5?style=flat-square)
+![Twilio](https://img.shields.io/badge/Twilio-SMS%2FVoice-F22F46?style=flat-square&logo=twilio&logoColor=white)
+![Piper](https://img.shields.io/badge/Piper-TTS-22c55e?style=flat-square)
+![Edge TTS](https://img.shields.io/badge/Edge_TTS-Neural-0078D4?style=flat-square)
+
+#### Data & Infrastructure
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-Cache-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-Vector-24B47E?style=flat-square)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-50%2B_flows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+
+#### Frontend & Tools
+![Next.js](https://img.shields.io/badge/Next.js-14-000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-Billing-635BFF?style=flat-square&logo=stripe&logoColor=white)
+
+</div>
+
+---
+
+<div align="center">
+
 gabe@gentic.pro | [Arachne Swarm](https://swarm.gentic.pro) | [Gentic AI](https://gentic.pro)
 
 <sub>All systems described are live in production. Proprietary model weights, scoring formulas, and business logic are not included in this repo. Open source modules are MIT licensed.</sub>
+
+</div>
