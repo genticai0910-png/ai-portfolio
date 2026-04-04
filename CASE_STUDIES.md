@@ -10,7 +10,7 @@
 Voice AI operations processing 100+ calls/week were spending $300-500/month on cloud LLM APIs for intent classification alone. Latency averaged 800ms-1.2s per classification, creating awkward pauses in live calls.
 
 ### Solution
-Fine-tuned Qwen 2.5 1.5B with LoRA on domain-specific voice transcripts. Deployed on local compute node using MLX inference with Ollama as failback. 3-tier cascade: MLX (primary), Ollama (local fallback), VPS Ollama (remote fallback).
+Fine-tuned Qwen 2.5 1.5B with LoRA on domain-specific voice transcripts. Deployed on local Apple Silicon using MLX inference with Ollama as failback. 3-tier cascade: MLX (primary), Ollama (local fallback), cloud Ollama (remote fallback).
 
 ### Results
 | Metric | Before | After |
@@ -31,7 +31,7 @@ Small models fine-tuned on domain data consistently beat large general models fo
 Cloud TTS services (Google, AWS Polly, ElevenLabs) were charging $0.004-0.016 per 1,000 characters. At scale across EN/ES/ZH calls, monthly TTS costs were projected to hit $200-400/month.
 
 ### Solution
-Self-hosted Piper + Edge TTS with espeak fallback. Cross-node failover between Mac Mini and VPS.
+Self-hosted Piper + Edge TTS with espeak fallback. Cross-node failover between local and cloud nodes.
 
 ### Results
 | Metric | Before (Cloud) | After (Self-Hosted) |
@@ -78,7 +78,7 @@ Architect everything local-first with cloud as fallback only. Own compute hardwa
 ### Monthly Operating Cost Breakdown
 | Service | Cost |
 |---------|------|
-| VPS hosting | ~$12 |
+| Cloud hosting | ~$12 |
 | Domain/SSL | ~$1 |
 | Cloud LLM (fallback only) | ~$5-15 |
 | Voice (Bland AI/Twilio, per-use) | Variable |

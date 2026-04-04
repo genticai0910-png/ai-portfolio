@@ -13,7 +13,7 @@ from llm_router import LLMRouter
 
 router = LLMRouter([
     {"provider": "local", "base_url": "http://localhost:LOCAL_PORT/v1", "model": "qwen2.5:1.5b", "priority": 1},
-    {"provider": "openai_compat", "base_url": "http://localhost:LOCAL_PORT/v1", "model": "qwen2.5:1.5b", "priority": 2},
+    {"provider": "openai_compat", "base_url": "http://localhost:OLLAMA_PORT/v1", "model": "qwen2.5:1.5b", "priority": 2},
     {"provider": "xai", "api_key": "...", "model": "grok-4-fast", "priority": 3},
     {"provider": "google", "api_key": "...", "model": "gemini-flash-lite", "priority": 4},
     {"provider": "anthropic", "api_key": "...", "model": "claude-haiku-4.5", "priority": 5},
@@ -273,7 +273,7 @@ if __name__ == "__main__":
         },
         {
             "provider": "ollama_local",
-            "base_url": "http://localhost:LOCAL_PORT/v1",
+            "base_url": "http://localhost:OLLAMA_PORT/v1",
             "model": "qwen2.5:1.5b",
             "priority": 2,
         },

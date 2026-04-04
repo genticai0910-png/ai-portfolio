@@ -14,7 +14,7 @@
 
 **Automation Architecture**: n8n (50+ production workflows), webhook-driven event systems, lead processing pipelines, multi-business orchestration, approval-gated outbound
 
-**Infrastructure**: Docker, Traefik, SSL, PostgreSQL, Redis, local compute node + VPS hybrid architecture, MCP servers, LaunchAgent management, cost-zero local deployment
+**Infrastructure**: Docker, Traefik, SSL, PostgreSQL, Redis, local + cloud hybrid architecture, MCP servers, cost-zero local deployment
 
 **Web Intelligence**: Scrapling, Firecrawl, Crawl4AI, anti-bot bypass, adaptive DOM parsing, structured extraction
 
@@ -29,16 +29,16 @@ Full-stack agent management: real-time spider web visualization, Kanban pipeline
 Novel stigmergy-based coordination replacing direct messaging between AI agents. Guard-enforced identity, 6 scoped domains, 4-tier autonomy (autonomous / notify-then-act / approval-required / blocked). Approval flow via Telegram inline keyboards.
 
 ### Custom Intent Classifier. 96.6% Accuracy
-Fine-tuned Qwen 2.5 1.5B with LoRA for real-time voice call classification. 9-class model, $0/month inference on Apple Silicon. 3-tier cascade: MLX, Ollama, VPS. Outperforms generic classifiers on domain-specific calls.
+Fine-tuned Qwen 2.5 1.5B with LoRA for real-time voice call classification. 9-class model, $0/month inference on Apple Silicon. 3-tier cascade: MLX, Ollama, cloud. Outperforms generic classifiers on domain-specific calls.
 
 ### Hybrid Compute Platform. $15/month Total
-local compute node (ML inference, TTS, scraping, agent brain) + VPS Docker (n8n, databases, reverse proxy, voice relay). Replaces $200-500/month equivalent cloud infrastructure.
+Local compute (ML inference, TTS, scraping, agent brain) + cloud Docker (n8n, databases, reverse proxy, voice relay). Replaces $200-500/month equivalent cloud infrastructure.
 
 ### Conversation Engine with Inline Directives
 State tracker injects dynamic prompts per-turn instead of static system prompts. Synthetic training pipeline generating 1,500+ multi-turn conversations with adversarial seller personas. Handles evasive and emotionally resistant callers.
 
 ### Multi-Language TTS at Zero Cost
-Piper + Edge TTS with espeak fallback. Three-layer failover, cross-node recovery between Mac Mini and VPS. Processes hundreds of calls weekly at $0/month.
+Piper + Edge TTS with espeak fallback. Three-layer failover, cross-node recovery between local and cloud. Processes hundreds of calls weekly at $0/month.
 
 ### Lead Intelligence Pipeline. 100+ Leads/Week
 Proprietary iRELOP scoring (Motivation 40, Opportunity 35, Profile 25), automated tier routing, voice agent outreach, CRM sync (HubSpot). End-to-end from ingestion to disposition.
@@ -55,7 +55,7 @@ Proprietary iRELOP scoring (Motivation 40, Opportunity 35, Profile 25), automate
 | Orchestration | n8n, webhooks, cron, Docker, Traefik |
 | Data | PostgreSQL, Redis, Qdrant, Supabase |
 | Scraping | Scrapling, Firecrawl, Crawl4AI, MCP |
-| Infra | local compute node, VPS, Traefik SSL, Docker Compose |
+| Infra | Local compute, cloud node, reverse proxy SSL, Docker Compose |
 | Frontend | Next.js, React, Tailwind, Vercel |
 | Languages | Python, TypeScript/Node.js, Bash, SQL |
 

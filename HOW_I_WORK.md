@@ -10,7 +10,7 @@ Every system starts with the question: **can this run on my own hardware?**
 
 Not because cloud is bad. Because dependency is expensive. When your voice AI pipeline depends on 4 cloud APIs, you inherit 4 SLAs, 4 pricing models, and 4 points of failure. Local-first means I control latency, cost, and uptime. Cloud becomes a fallback, not a crutch.
 
-**Example:** The VSAI Intent Classifier runs on a local compute node at $0/month. If the Mac Mini goes down, Ollama takes over locally. If local fails, the VPS mirror takes over. Three layers deep before I touch a paid API.
+**Example:** The VSAI Intent Classifier runs on a local Apple Silicon node at $0/month. If the local node goes down, Ollama takes over locally. If local fails, the cloud mirror takes over. Three layers deep before I touch a paid API.
 
 ---
 
@@ -21,7 +21,7 @@ Every critical path gets a fallback chain. Not "we should add redundancy later."
 ```
 LLM:      Local MLX -> Local Ollama -> Cloud Grok -> Cloud Gemini -> Cloud Haiku
 TTS:      Piper -> Edge TTS -> espeak
-Compute:  Mac Mini -> VPS Docker
+Compute:  Local compute -> Cloud Docker
 Scraping:  Local Scrapling -> Firecrawl
 ```
 
@@ -43,7 +43,7 @@ This means building ugly-but-functional before pretty-but-theoretical. It means 
 
 The industry defaults to "use the biggest model you can afford." I default to "use the smallest model that solves the problem."
 
-A 1.5B parameter model fine-tuned on your data beats a 70B general model on your task and costs nothing to run. The VSAI Intent Classifier proves this: 96.6% accuracy on a model that fits alongside a dozen other services on a single Mac Mini.
+A 1.5B parameter model fine-tuned on your data beats a 70B general model on your task and costs nothing to run. The VSAI Intent Classifier proves this: 96.6% accuracy on a model that fits alongside a dozen other services on a single local node.
 
 **Model selection framework:**
 1. Can a 1-3B model do this with fine-tuning? Use it.

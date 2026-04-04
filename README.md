@@ -17,7 +17,7 @@ I design, deploy, and operate end-to-end AI infrastructure from fine-tuned local
 | **Cost-Optimized LLM Routing** | Multi-provider fallback chains, local-first inference, complexity-based routing | Production |
 | **Lead Intelligence** | Proprietary scoring (iRELOP), RAG pipelines, Qdrant vector search | Production |
 | **Web Intelligence** | Scrapling, Firecrawl, Crawl4AI, anti-bot bypass, structured extraction | Production |
-| **Self-Hosted Infrastructure** | local compute node (compute) + VPS Docker (control plane), Traefik SSL | Production |
+| **Self-Hosted Infrastructure** | local compute node + cloud Docker (control plane), reverse proxy with SSL | Production |
 
 ---
 
@@ -33,13 +33,13 @@ $50/mo product: 7 AI agents (research, lead scoring, competitor intel, content b
 Stigmergy-based coordination protocol replacing direct webhook messaging between AI agents. Guard-enforced scopes, 4-tier autonomy model (autonomous / notify / approval / blocked), conflict resolution, peer sync via HMAC. Novel architecture for production agent fleets.
 
 ### [VSAI Intent Classifier: Custom Fine-Tuned Model](projects/vsai-intent-model.md)
-Fine-tuned **Qwen 2.5 1.5B with LoRA** for real-time voice call intent classification. 9-class model running locally on MLX at $0/month with Ollama failover. 3-tier cascade: MLX, Ollama, VPS.
+Fine-tuned **Qwen 2.5 1.5B with LoRA** for real-time voice call intent classification. 9-class model running locally on MLX at $0/month with Ollama failover. 3-tier cascade: MLX, Ollama, cloud fallback.
 
 ### [Hybrid Compute Architecture](architecture/hybrid-compute.md)
-local compute node as production compute node + VPS as Docker control plane. Runs n8n, Qdrant RAG, PostgreSQL, Redis, Traefik with SSL, custom MCP servers. All orchestrated for zero-downtime failover.
+Local compute node + cloud control plane. Runs n8n, Qdrant RAG, PostgreSQL, Redis, reverse proxy with SSL, custom MCP servers. All orchestrated for zero-downtime failover.
 
 ### [Local TTS Infrastructure](projects/local-tts.md)
-Multi-language text-to-speech (EN/ES/ZH) via Piper/Edge TTS with espeak fallback. Full Mac + VPS failover. **$0/month operating cost.**
+Multi-language text-to-speech (EN/ES/ZH) via Piper/Edge TTS with espeak fallback. Full local + cloud failover. **$0/month operating cost.**
 
 ### [iRELOP Lead Scoring Engine](projects/irelop-scoring.md)
 Proprietary 100-point lead qualification model weighting Motivation (40), Opportunity (35), and Profile (25) signals. Powers automated routing across HOT/WARM/COOL/PASS tiers with voice agent dispatch.
@@ -51,7 +51,7 @@ Inline directive architecture for AI-guided phone conversations. State tracker i
 50+ production workflows handling lead ingestion, qualification, voice agent orchestration, CRM sync (HubSpot), drip campaigns, revenue reconciliation, and real-time Telegram alerting across multiple business verticals.
 
 ### [Scrapling Infrastructure](projects/scrapling-infra.md)
-Dual-deployment web scraping: Mac Mini (native + MCP server) + VPS Docker (HTTP MCP for n8n). StealthyFetcher for anti-bot/Cloudflare bypass. Adaptive parsing self-heals on DOM changes.
+Dual-deployment web scraping: local node (native + MCP server) + cloud Docker (HTTP MCP for n8n). StealthyFetcher for anti-bot/Cloudflare bypass. Adaptive parsing self-heals on DOM changes.
 
 ---
 
@@ -85,7 +85,7 @@ Dual-deployment web scraping: Mac Mini (native + MCP server) + VPS Docker (HTTP 
 
 **Local-first, cost-zero where possible.** Every system starts with the question: *can this run on my own hardware at $0/month?* Custom model training, TTS, inference, scraping all run locally before touching cloud APIs.
 
-**Fallback chains, not single points of failure.** LLM routing: `local MLX -> Ollama -> Grok -> Gemini -> Haiku`. TTS: `Piper -> Edge TTS -> espeak`. Compute: `Mac Mini -> VPS`. Every critical path has a backup.
+**Fallback chains, not single points of failure.** LLM routing: `local MLX -> Ollama -> Grok -> Gemini -> Haiku`. TTS: `Piper -> Edge TTS -> espeak`. Compute: `Local -> Cloud`. Every critical path has a backup.
 
 **Revenue-generating from day one.** Nothing ships as a demo. Every system processes real leads, serves real customers, or reduces real costs the day it goes live.
 
