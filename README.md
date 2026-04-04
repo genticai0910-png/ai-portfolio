@@ -61,6 +61,131 @@ I design, deploy, and operate end-to-end AI infrastructure from fine-tuned local
 
 ---
 
+## Notable Builds
+
+> Everything here is live, deployed, and processing real data. Not demos.
+
+<table>
+<tr>
+<td width="50%">
+
+#### Arachne Swarm Dashboard
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Next.js](https://img.shields.io/badge/Next.js-14-000?style=flat-square&logo=nextdotjs&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-realtime-blue?style=flat-square)
+
+Full agent orchestration platform with **animated spider web visualization** showing agents as spiders crawling a web in real-time. Kanban pipeline, budget gauge, activity feed, multi-tenant isolation, Stripe billing.
+
+**[swarm.gentic.pro](https://swarm.gentic.pro)**
+
+</td>
+<td width="50%">
+
+#### Arachne Claw Landing Page
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Glassmorphism](https://img.shields.io/badge/design-glassmorphism-8B5CF6?style=flat-square)
+![Canvas](https://img.shields.io/badge/canvas-animated_web-22c55e?style=flat-square)
+
+$50/mo agent sandbox. **Apple-style glassmorphism cards**, animated spider web background with 22 crawling spiders (HiDPI canvas), chat demo with visual report card, 3-tier pricing.
+
+**[swarm.gentic.pro/claw](https://swarm.gentic.pro/claw)**
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Markspace Coordination Protocol
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Novel](https://img.shields.io/badge/architecture-novel-f59e0b?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=flat-square&logo=python&logoColor=white)
+
+**Stigmergy-based multi-agent coordination**. Agents write marks (intents, actions, observations) into a shared space. Guard enforces identity, scopes, and conflict policies. 4-tier autonomy model controls what agents can do without human approval.
+
+</td>
+<td width="50%">
+
+#### VSAI Intent Classifier
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Accuracy](https://img.shields.io/badge/accuracy-96.6%25-22c55e?style=flat-square)
+![Cost](https://img.shields.io/badge/cost-$0%2Fmo-22c55e?style=flat-square)
+
+**Fine-tuned Qwen 2.5 1.5B** with LoRA for voice call intent classification. 9 classes, runs on Apple Silicon via MLX. 3-tier cascade with Ollama and cloud fallback. Replaced $300-500/mo cloud APIs.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Conversation Engine v5
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Architecture](https://img.shields.io/badge/inline-directives-8B5CF6?style=flat-square)
+![Training](https://img.shields.io/badge/1500%2B-synthetic_convos-f59e0b?style=flat-square)
+
+**Inline directive architecture** for AI phone conversations. State tracker injects dynamic prompts per-turn. Synthetic training pipeline with adversarial seller personas (evasive, emotional, resistant). 10-question coverage tracking.
+
+</td>
+<td width="50%">
+
+#### iRELOP Lead Scoring
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Proprietary](https://img.shields.io/badge/IP-proprietary-f59e0b?style=flat-square)
+![100pt](https://img.shields.io/badge/score-100_point-22c55e?style=flat-square)
+
+**Proprietary 100-point scoring model**. Motivation (40) + Opportunity (35) + Profile (25). Powers automated routing: HOT >= 80 (voice), WARM >= 60 (SMS), COOL >= 40 (email), PASS < 40 (archive). GAN pipeline with Strategist + Auditor agents.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### OpenClaw / Clue AI Agent
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Telegram](https://img.shields.io/badge/Telegram-bot-26A5E4?style=flat-square&logo=telegram&logoColor=white)
+![Tools](https://img.shields.io/badge/30%2B-tools-22c55e?style=flat-square)
+
+Telegram-native AI orchestrator. 30+ tools (web search, scraping, RAG, voice, CRM, scoring). Cost-optimized LLM chain (Grok, Gemini, Haiku). Voice input/output with TTS. Planning engine with persistent multi-step plans.
+
+**[t.me/[CLUE_BOT]](https://t.me/[CLUE_BOT])**
+
+</td>
+<td width="50%">
+
+#### n8n Workflow Engine
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Workflows](https://img.shields.io/badge/50%2B-workflows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![Webhooks](https://img.shields.io/badge/auth-HMAC%2BAPI_key-f59e0b?style=flat-square)
+
+50+ production workflows: lead ingestion, iRELOP scoring, voice dispatch, CRM sync (HubSpot), drip campaigns, revenue reconciliation, content distribution, Telegram alerting. All webhook-authenticated.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Hybrid Compute Architecture
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Cost](https://img.shields.io/badge/cost-$15%2Fmo-22c55e?style=flat-square)
+![Uptime](https://img.shields.io/badge/failover-3_tier-22c55e?style=flat-square)
+
+Local compute (ML, TTS, scraping, agent brain) + cloud Docker (n8n, databases, proxy, voice relay). Replaces $200-500/mo cloud infrastructure. SSL, reverse proxy, SSH tunnels, LaunchAgent management.
+
+</td>
+<td width="50%">
+
+#### Multi-Language TTS
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Cost](https://img.shields.io/badge/cost-$0%2Fmo-22c55e?style=flat-square)
+![Languages](https://img.shields.io/badge/langs-EN%2FES%2FZH-22c55e?style=flat-square)
+
+Piper + Edge TTS + espeak. Three-layer failover, cross-node recovery. Processes hundreds of voice interactions weekly. Replaced $200-400/mo projected cloud TTS costs with zero.
+
+</td>
+</tr>
+</table>
+
+---
+
 ## Featured Projects
 
 ### [Arachne Swarm: AI Agent Orchestration Dashboard](projects/arachne-swarm.md)
