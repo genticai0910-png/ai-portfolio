@@ -182,6 +182,134 @@ Piper + Edge TTS + espeak. Three-layer failover, cross-node recovery. Processes 
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+#### J-Neutron Brain API
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![MCP](https://img.shields.io/badge/MCP-6_tools-8B5CF6?style=flat-square)
+![Qdrant](https://img.shields.io/badge/Qdrant-12_collections-24B47E?style=flat-square)
+
+6-tool MCP brain API: pull, push, prune, guard, score, query. Query planner across 12 Qdrant collections with score fusion reranker. Voicemail upload/serve endpoint. Traefik-fronted.
+
+</td>
+<td width="50%">
+
+#### Agentic CRM OS
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Tables](https://img.shields.io/badge/schema-15_tables-4169E1?style=flat-square)
+![Tenants](https://img.shields.io/badge/tenants-3-22c55e?style=flat-square)
+
+Multi-tenant CRM with **state machine** (`fn_transition_lead`, 12 states, FOR UPDATE locking). 9 n8n workflows, 3 active tenants (DealiQ, Gentic AI, VSAI). Lead lifecycle from ingestion to disposition.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Custom Model Training Pipeline
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Models](https://img.shields.io/badge/models-7_trained-f59e0b?style=flat-square)
+![MLX](https://img.shields.io/badge/MLX-LoRA-000?style=flat-square&logo=apple&logoColor=white)
+
+Full fine-tuning pipeline: synthetic data generation (adversarial personas), LoRA training on Qwen 2.5, MLX quantization, eval framework. **7 production models** across intent classification, deal qualification, and conversation engine.
+
+</td>
+<td width="50%">
+
+#### DealiQ Market Harvester
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Python](https://img.shields.io/badge/Python-harvester-3776AB?style=flat-square&logo=python&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-containerized-2496ED?style=flat-square)
+
+Automated real estate market data harvester. Property extraction with defuddle + site templates, iRELOP enrichment pipeline. Feeds DealiQ analytics and lead scoring.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### GenticOS
+![Status](https://img.shields.io/badge/status-built-f59e0b?style=flat-square)
+![BullMQ](https://img.shields.io/badge/BullMQ-workers-DC382D?style=flat-square)
+![OPA](https://img.shields.io/badge/OPA-policies-7D9199?style=flat-square)
+
+Full AI-powered RE operating system. Node 20, TypeScript, BullMQ job queue (8 tools, 5 concurrency), OPA runtime policies. Worker handles Twilio, Bland AI, email dispatch.
+
+</td>
+<td width="50%">
+
+#### MegaMindZ Knowledge Graph
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Supabase](https://img.shields.io/badge/Supabase-backend-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+
+Supabase-backed knowledge graph for cross-domain intelligence. Powers J-Neutron query planner and Clue's long-term memory.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Pipecat Voice Pipeline
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![WebRTC](https://img.shields.io/badge/WebRTC-LiveKit-blue?style=flat-square)
+![Cost](https://img.shields.io/badge/cost-$0.01%2Fcall-22c55e?style=flat-square)
+
+Real-time voice AI pipeline replacing Bland AI for lower-cost calls. LiveKit relay on cloud, Pipecat on local. **$0.01/call** vs $0.07+ on Bland.
+
+</td>
+<td width="50%">
+
+#### SearXNG Self-Hosted Search
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Privacy](https://img.shields.io/badge/privacy-zero_tracking-22c55e?style=flat-square)
+
+Self-hosted meta-search engine with proxy. Powers web search tools across Clue, KORA, and n8n workflows. Zero API costs, zero tracking, zero rate limits.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### AccompAgent Gateway
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Auth](https://img.shields.io/badge/auth-HMAC%2BIP-f59e0b?style=flat-square)
+![Tools](https://img.shields.io/badge/bridge-12_tools-22c55e?style=flat-square)
+
+HMAC + IP allowlist gateway for Accomplish task automation. MCP stdio bridge with 12 tools and 38 job types. Supabase backend.
+
+</td>
+<td width="50%">
+
+#### Scrapling Infrastructure
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Stealth](https://img.shields.io/badge/stealth-anti--bot-f59e0b?style=flat-square)
+![Dual](https://img.shields.io/badge/deploy-local%2Bcloud-22c55e?style=flat-square)
+
+Dual-deployment web scraping: local (native + MCP) + cloud Docker (HTTP for n8n). StealthyFetcher for anti-bot/Cloudflare bypass. Adaptive DOM parsing self-heals on site changes.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Gumroad Digital Products
+![Status](https://img.shields.io/badge/status-live-22c55e?style=flat-square)
+![Products](https://img.shields.io/badge/products-3-f59e0b?style=flat-square)
+
+Three digital products for sale: **iRELOP Lead Scoring Guide**, **n8n Workflow Pack**, **AI Voice Agent Blueprint**. Auto-delivered via Resend. Passive revenue stream.
+
+</td>
+<td width="50%">
+
+#### Revenue Infrastructure
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Stripe](https://img.shields.io/badge/Stripe-reconciliation-635BFF?style=flat-square&logo=stripe&logoColor=white)
+
+Stripe event tracking, subscription management, MRR snapshots, daily revenue reconciliation (1 PM UTC cron). PG schema `revenue` with targets and actuals.
+
+</td>
+</tr>
 </table>
 
 ---
@@ -257,6 +385,8 @@ Dual-deployment web scraping: local node (native + MCP server) + cloud Docker (H
 ---
 
 ## Business Context
+
+**By the numbers:** 42 production services, 32 cloud containers, 18 local managed services, 50+ n8n workflows, 7 custom-trained models, 15+ PG schemas, 12 Qdrant collections, 3 digital products.
 
 These systems power three active businesses:
 
