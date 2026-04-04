@@ -402,6 +402,115 @@ Plus one SaaS product:
 
 ---
 
+## LLM Engineering
+
+<table>
+<tr>
+<td width="50%">
+
+#### Custom Model Training
+![LoRA](https://img.shields.io/badge/LoRA-fine--tuning-FF6F00?style=flat-square)
+![Qwen](https://img.shields.io/badge/Qwen_2.5-1.5B%2F7B-22c55e?style=flat-square)
+![Models](https://img.shields.io/badge/7-models_trained-f59e0b?style=flat-square)
+
+7 production models fine-tuned on Qwen 2.5 with LoRA. Full pipeline: synthetic data generation with adversarial personas, MLX training on Apple Silicon, quantization (Q4/Q8), eval framework with pass gates.
+
+</td>
+<td width="50%">
+
+#### Multi-Provider LLM Routing
+![Chain](https://img.shields.io/badge/fallback-5_tier-26A5E4?style=flat-square)
+![Cost](https://img.shields.io/badge/cost-optimized-22c55e?style=flat-square)
+![Complexity](https://img.shields.io/badge/routing-complexity_based-8B5CF6?style=flat-square)
+
+`Local MLX > Ollama > Grok > Gemini > Haiku`. Complexity-based routing: simple queries to cheap models, complex to premium. Circuit breakers, latency tracking. **$0 for 80%+ of queries.**
+
+**[Open Source: LLM Fallback Router](open-source/llm-fallback-router/)**
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Local Inference ($0/mo)
+![MLX](https://img.shields.io/badge/MLX-Apple_Silicon-000?style=flat-square&logo=apple&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-local-white?style=flat-square)
+![Latency](https://img.shields.io/badge/latency-%3C200ms-22c55e?style=flat-square)
+
+MLX server (Ollama-compatible API) running custom models at $0/mo. 3-tier cascade: MLX (<200ms), Ollama, cloud. Handles intent classification, deal qualification, and conversation engine simultaneously.
+
+</td>
+<td width="50%">
+
+#### RAG + Vector Search
+![Qdrant](https://img.shields.io/badge/Qdrant-12_collections-24B47E?style=flat-square)
+![Embedding](https://img.shields.io/badge/nomic--embed-768d-f59e0b?style=flat-square)
+
+12 Qdrant collections for semantic search across leads, deals, competitors, knowledge. J-Neutron query planner with score fusion reranker. Inline directive architecture for conversation state injection.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Synthetic Data Generation
+![Samples](https://img.shields.io/badge/samples-5000%2B-f59e0b?style=flat-square)
+![Pipeline](https://img.shields.io/badge/pipeline-automated-22c55e?style=flat-square)
+
+Larger models generate domain-specific training data. Adversarial seller personas (evasive, emotional, cooperative, tire-kicker). 1,500+ multi-turn conversations. Metadata tracking for quality analysis.
+
+</td>
+<td width="50%">
+
+#### Eval Framework
+![Accuracy](https://img.shields.io/badge/best-96.6%25-22c55e?style=flat-square)
+![Automated](https://img.shields.io/badge/eval-automated-8B5CF6?style=flat-square)
+
+Automated eval with pass gates: accuracy thresholds, latency benchmarks, cost per variant. Cold test sets, confusion matrices, per-class metrics. Tracks regression across versions.
+
+</td>
+</tr>
+</table>
+
+---
+
+## Markspace: Multi-Agent Coordination
+
+<table>
+<tr>
+<td width="60%">
+
+A **novel stigmergy-based protocol** for coordinating autonomous AI agents in production. Instead of direct messaging, agents write marks (intents, actions, observations, warnings) into a shared space. A Guard enforces identity, scopes, and conflict policies.
+
+**Key innovations:**
+- **6 scoped domains**: scoring, voice, deals, ops, control, outreach
+- **4-tier autonomy**: autonomous > notify > approval > blocked
+- **Conflict resolution**: FIRST_WRITER (voice/deals), HIGHEST_CONFIDENCE (scoring/ops)
+- **Approval gates**: outbound calls/SMS require human Telegram approval
+- **Peer sync**: HMAC-authenticated mark replication between agents
+- **Audit trail**: every Action mark persisted to PostgreSQL
+
+Currently coordinating **Clue** (orchestrator) and **KORA** (executor) across lead processing, voice calls, and deal analysis.
+
+</td>
+<td width="40%" align="center">
+
+![Architecture](https://img.shields.io/badge/architecture-novel-8B5CF6?style=for-the-badge)
+
+![Agents](https://img.shields.io/badge/agents-Clue_%2B_KORA-22c55e?style=for-the-badge)
+
+![Scopes](https://img.shields.io/badge/scopes-6_domains-26A5E4?style=for-the-badge)
+
+![Autonomy](https://img.shields.io/badge/autonomy-4_tiers-f59e0b?style=for-the-badge)
+
+![Sync](https://img.shields.io/badge/sync-HMAC_peer-DC382D?style=for-the-badge)
+
+</td>
+</tr>
+</table>
+
+---
+
 ## What I'm Looking For
 
 I'm open to roles and contracts involving:
