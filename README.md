@@ -293,11 +293,14 @@ Dual-deployment web scraping: local (native + MCP) + cloud Docker (HTTP for n8n)
 <tr>
 <td width="50%">
 
-#### Gumroad Digital Products
+#### Gumroad Digital Product Store
 ![Status](https://img.shields.io/badge/status-live-22c55e?style=flat-square)
-![Products](https://img.shields.io/badge/products-3-f59e0b?style=flat-square)
+![Products](https://img.shields.io/badge/products-18-f59e0b?style=flat-square)
+![Store](https://img.shields.io/badge/store-genticai.gumroad.com-ff90e8?style=flat-square)
 
-Three digital products for sale: **iRELOP Lead Scoring Guide**, **n8n Workflow Pack**, **AI Voice Agent Blueprint**. Auto-delivered via Resend. Passive revenue stream.
+**18 digital products** across 4 categories: n8n automation blueprints ($12-$97), social media content packs for 6 verticals ($12-$77), AI content creator bundles ($17-$47), and lead generation systems ($49-$97). Auto-delivered via Resend.
+
+**[genticai.gumroad.com](https://genticai.gumroad.com)**
 
 </td>
 <td width="50%">
@@ -386,7 +389,7 @@ Dual-deployment web scraping: local node (native + MCP server) + cloud Docker (H
 
 ## Business Context
 
-**By the numbers:** 42 production services, 32 cloud containers, 18 local managed services, 50+ n8n workflows, 7 custom-trained models, 15+ PG schemas, 12 Qdrant collections, 3 digital products.
+**By the numbers:** 42 production services, 32 cloud containers, 18 local managed services, 50+ n8n workflows, 7 custom-trained models, 15+ PG schemas, 12 Qdrant collections, 18 digital products.
 
 These systems power three active businesses:
 
