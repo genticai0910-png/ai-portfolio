@@ -315,6 +315,155 @@ Stripe event tracking, subscription management, MRR snapshots, daily revenue rec
 </tr>
 </table>
 
+<tr>
+<td width="50%">
+
+#### KORA Tactical Agent
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Telegram](https://img.shields.io/badge/Telegram-@kora__ops__bot-26A5E4?style=flat-square&logo=telegram&logoColor=white)
+![LLM](https://img.shields.io/badge/chain-qwen3_>_kimi_>_gemini-22c55e?style=flat-square)
+
+Autonomous operations agent. Owns voice ops, Gumroad, pipeline execution. Peer to Clue (not subordinate). $0 LLM chain (qwen3:8b > kimi-k2 > gemini-flash-lite). Zombie prevention, port-check before launch.
+
+</td>
+<td width="50%">
+
+#### OpenClaw Broker v1
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![API](https://img.shields.io/badge/REST-gateway-26A5E4?style=flat-square)
+![Tiers](https://img.shields.io/badge/pricing-$50--$5997-f59e0b?style=flat-square)
+
+SaaS REST API gateway at broker.gentic.pro. Multi-tenant agent execution engine with governance gates (AuthN, AuthZ, Policy, Budget, Redact, Audit). Sandbox to Enterprise pricing.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Gentic Lead Pipeline
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![HubSpot](https://img.shields.io/badge/HubSpot-auto_deals-FF7A59?style=flat-square)
+![Pipeline](https://img.shields.io/badge/webhook-to_CRM-22c55e?style=flat-square)
+
+Webhook > validate > iRELOP score > PostgreSQL > Telegram alert > HubSpot auto-deal creation. HOT/WARM/COOL leads auto-create contacts + deals with AI-generated strategies.
+
+</td>
+<td width="50%">
+
+#### Gentic Conversation Engine
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![WebSocket](https://img.shields.io/badge/WebSocket-realtime-blue?style=flat-square)
+![SMS](https://img.shields.io/badge/Twilio-SMS-F22F46?style=flat-square)
+
+AI advisor "Alex" via WebSocket (wss://api.gentic.pro/ws). SMS conversation engine with 10-question state tracker, session management per phone number (1hr TTL). Twilio toll-free integrated.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Outreach Dispatch Pipeline
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Cron](https://img.shields.io/badge/cron-every_5min-f59e0b?style=flat-square)
+![Channels](https://img.shields.io/badge/SMS_%2B_Email-drip-22c55e?style=flat-square)
+
+n8n cron every 5 min (8AM-8PM Pacific). WARM: 4-stage SMS drip (days 1,3,7,14). COOL: 4-stage email drip (days 1,5,10,20). Twilio SMS + Resend email.
+
+</td>
+<td width="50%">
+
+#### GAN Lead Pipeline
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Architecture](https://img.shields.io/badge/agents-Strategist_%2B_Auditor-8B5CF6?style=flat-square)
+
+iRELOP GAN Pipeline: Strategist agent generates offer strategies, Auditor validates. Follow-up scheduling. 5 PG tables. Contract-based qualification with disposition tracking.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Property Extractor
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Defuddle](https://img.shields.io/badge/defuddle-extraction-22c55e?style=flat-square)
+
+DealiQ property data extractor using defuddle + site-specific templates. Pulls property details from listing URLs, enriches with iRELOP scoring. Feeds deal analysis pipeline.
+
+</td>
+<td width="50%">
+
+#### Security Sweep Tool
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Phases](https://img.shields.io/badge/phases-7-DC382D?style=flat-square)
+![Nuclei](https://img.shields.io/badge/Nuclei_%2B_Trivy-scanners-f59e0b?style=flat-square)
+
+Production security sweep (`~/bin/security-sweep`). 7-phase audit: port scan, container audit, SSL check, dependency scan, secret detection, Nuclei vuln scan, Trivy image scan. Telegram alerts.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Social Content Funnel
+![Status](https://img.shields.io/badge/status-built-f59e0b?style=flat-square)
+![n8n](https://img.shields.io/badge/n8n-4_workflows-EA4B71?style=flat-square)
+
+Content distribution pipeline: Distributor v2, Generate, Approval (Airtable), Lead Capture. HubSpot integration, Telegram notifications. Automated social media content across platforms.
+
+</td>
+<td width="50%">
+
+#### Smart AI Router
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![n8n](https://img.shields.io/badge/n8n-webhook-EA4B71?style=flat-square)
+![Models](https://img.shields.io/badge/routes-multi_model-8B5CF6?style=flat-square)
+
+General-purpose LLM routing workflow. Receives requests via webhook, selects optimal model based on task complexity and cost constraints. Returns unified response format.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### OpenClaw Guardian
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Watchdog](https://img.shields.io/badge/type-watchdog-DC382D?style=flat-square)
+
+Spend monitor + health checker + auto-kill. Tracks hourly/daily LLM spend, kills gateway if thresholds exceeded ($5/hr, $20/day). VPS container health via SSH. Max 3 kills/day with cooldown.
+
+</td>
+<td width="50%">
+
+#### Memory Writer + Watchdog
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![LaunchAgent](https://img.shields.io/badge/managed-launchd-000?style=flat-square)
+
+Automated memory persistence pipeline. Syncs conversation learnings, feedback, and project state to persistent storage. Watchdog ensures memory services stay healthy.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Claw-Kanban
+![Status](https://img.shields.io/badge/status-built-f59e0b?style=flat-square)
+![Multi-Agent](https://img.shields.io/badge/routes-Claude_%2B_Codex_%2B_Gemini-8B5CF6?style=flat-square)
+
+Multi-agent task routing kanban board. Routes tasks to Claude, Codex, Gemini, and other AI agents based on task type and model capability. Visual pipeline management.
+
+</td>
+<td width="50%">
+
+#### SSH Tunnel Architecture
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Tunnels](https://img.shields.io/badge/tunnels-4_active-22c55e?style=flat-square)
+
+4 persistent SSH tunnels (J-Neutron, PostgreSQL, MLX, Extractor) connecting local compute to cloud control plane. LaunchAgent-managed with auto-reconnect. Cloudflared tunnel for additional routing.
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## Featured Projects
