@@ -1,22 +1,91 @@
-# Gabe Acosta | AI Infrastructure Engineer & Automation Architect
+<div align="center">
+
+# Gabe Acosta
+
+### AI Infrastructure Engineer & Automation Architect
+
+![AI/ML](https://img.shields.io/badge/AI%2FML-Engineering-22c55e?style=for-the-badge)
+![Voice AI](https://img.shields.io/badge/Voice-AI-26A5E4?style=for-the-badge)
+![Agents](https://img.shields.io/badge/Multi--Agent-Orchestration-8B5CF6?style=for-the-badge)
+![Automation](https://img.shields.io/badge/Automation-Architecture-EA4B71?style=for-the-badge)
 
 > I build production AI systems that run at $0/month and generate revenue from day one.
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-README-22c55e?style=flat-square)](README.md)
+[![Case Studies](https://img.shields.io/badge/Case_Studies-4_studies-f59e0b?style=flat-square)](CASE_STUDIES.md)
+[![How I Work](https://img.shields.io/badge/How_I_Work-8_principles-8B5CF6?style=flat-square)](HOW_I_WORK.md)
+[![Email](https://img.shields.io/badge/Email-gabe%40gentic.pro-blue?style=flat-square)](mailto:gabe@gentic.pro)
+
+</div>
 
 ---
 
 ## Core Competencies
 
-**AI/ML Engineering**: Fine-tuning small language models (LoRA on Qwen 2.5), custom inference pipelines (MLX, Ollama), multi-provider LLM routing with complexity-based model selection, RAG systems, vector search (Qdrant)
+<table>
+<tr>
+<td width="50%">
 
-**AI Agent Orchestration**: Multi-agent coordination (Markspace stigmergy protocol), tiered autonomy models, agent fleet management (Arachne Swarm), SaaS agent platforms (Arachne Claw)
+**AI/ML Engineering**
+![LoRA](https://img.shields.io/badge/LoRA-Qwen_2.5-FF6F00?style=flat-square)
+![MLX](https://img.shields.io/badge/MLX-inference-000?style=flat-square&logo=apple&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-RAG-24B47E?style=flat-square)
 
-**Voice AI**: End-to-end voice agent design, Bland AI, Twilio, custom TTS (Piper/Edge TTS), real-time intent classification, conversation state management with inline directives
+Fine-tuning small language models, custom inference pipelines (MLX, Ollama), multi-provider LLM routing with complexity-based model selection, RAG systems, vector search
 
-**Automation Architecture**: n8n (50+ production workflows), webhook-driven event systems, lead processing pipelines, multi-business orchestration, approval-gated outbound
+</td>
+<td width="50%">
 
-**Infrastructure**: Docker, Traefik, SSL, PostgreSQL, Redis, local + cloud hybrid architecture, MCP servers, cost-zero local deployment
+**AI Agent Orchestration**
+![Markspace](https://img.shields.io/badge/Markspace-stigmergy-8B5CF6?style=flat-square)
+![Arachne](https://img.shields.io/badge/Arachne-swarm-22c55e?style=flat-square)
 
-**Web Intelligence**: Scrapling, Firecrawl, Crawl4AI, anti-bot bypass, adaptive DOM parsing, structured extraction
+Multi-agent coordination (Markspace protocol), tiered autonomy models, agent fleet management (Arachne Swarm), SaaS agent platforms (Arachne Claw)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**Voice AI**
+![Bland](https://img.shields.io/badge/Bland_AI-voice-5046E5?style=flat-square)
+![Twilio](https://img.shields.io/badge/Twilio-SMS-F22F46?style=flat-square&logo=twilio&logoColor=white)
+![TTS](https://img.shields.io/badge/Piper-TTS-22c55e?style=flat-square)
+
+End-to-end voice agent design, custom TTS (Piper/Edge TTS), real-time intent classification, conversation state management with inline directives
+
+</td>
+<td width="50%">
+
+**Automation Architecture**
+![n8n](https://img.shields.io/badge/n8n-50%2B_flows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![Webhooks](https://img.shields.io/badge/webhooks-HMAC-f59e0b?style=flat-square)
+
+50+ production workflows, webhook-driven event systems, lead processing pipelines, multi-business orchestration, approval-gated outbound
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**Infrastructure**
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+![PG](https://img.shields.io/badge/PostgreSQL-15-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+
+Docker, Traefik SSL, PostgreSQL, Redis, local + cloud hybrid architecture, MCP servers, cost-zero local deployment
+
+</td>
+<td width="50%">
+
+**Web Intelligence**
+![Scrapling](https://img.shields.io/badge/Scrapling-stealth-f59e0b?style=flat-square)
+![Firecrawl](https://img.shields.io/badge/Firecrawl-extract-22c55e?style=flat-square)
+
+Scrapling, Firecrawl, Crawl4AI, anti-bot bypass, adaptive DOM parsing, structured extraction
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -84,4 +153,11 @@ Proprietary iRELOP scoring (Motivation 40, Opportunity 35, Profile 25), automate
 
 ---
 
-gabe@gentic.pro | [Portfolio](README.md) | [Arachne Claw](https://swarm.gentic.pro/claw) | [t.me/[CLUE_BOT]](https://t.me/[CLUE_BOT])
+<div align="center">
+
+[![Email](https://img.shields.io/badge/gabe%40gentic.pro-contact-22c55e?style=for-the-badge)](mailto:gabe@gentic.pro)
+[![Portfolio](https://img.shields.io/badge/Portfolio-README-000?style=for-the-badge)](README.md)
+[![Arachne Claw](https://img.shields.io/badge/Arachne_Claw-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro/claw)
+[![Telegram](https://img.shields.io/badge/Clue_Bot-Live-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/[CLUE_BOT])
+
+</div>

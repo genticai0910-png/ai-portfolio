@@ -1,10 +1,22 @@
+<div align="center">
+
 # Case Studies
 
 > Real outcomes from production systems. No demos, no proofs-of-concept.
 
+[![Back to Portfolio](https://img.shields.io/badge/Back_to-Portfolio-22c55e?style=flat-square)](README.md)
+[![Resume](https://img.shields.io/badge/Resume-view-000?style=flat-square)](RESUME.md)
+[![How I Work](https://img.shields.io/badge/How_I_Work-view-8B5CF6?style=flat-square)](HOW_I_WORK.md)
+
+</div>
+
 ---
 
 ## Case Study 1: Replacing Cloud AI with Local Inference
+
+![Savings](https://img.shields.io/badge/savings-$500%2Fmo-22c55e?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/accuracy-96.6%25-22c55e?style=for-the-badge)
+![Latency](https://img.shields.io/badge/latency-%3C200ms-22c55e?style=for-the-badge)
 
 ### Challenge
 Voice AI operations processing 100+ calls/week were spending $300-500/month on cloud LLM APIs for intent classification alone. Latency averaged 800ms-1.2s per classification, creating awkward pauses in live calls.
@@ -27,6 +39,10 @@ Small models fine-tuned on domain data consistently beat large general models fo
 
 ## Case Study 2: Zero-Cost TTS for Multi-Language Voice Agents
 
+![Savings](https://img.shields.io/badge/savings-$400%2Fmo-22c55e?style=for-the-badge)
+![Languages](https://img.shields.io/badge/languages-EN%2FES%2FZH-26A5E4?style=for-the-badge)
+![Failover](https://img.shields.io/badge/failover-3_layers-f59e0b?style=for-the-badge)
+
 ### Challenge
 Cloud TTS services (Google, AWS Polly, ElevenLabs) were charging $0.004-0.016 per 1,000 characters. At scale across EN/ES/ZH calls, monthly TTS costs were projected to hit $200-400/month.
 
@@ -48,6 +64,10 @@ TTS is a solved problem at the open-source level. Piper voices are indistinguish
 
 ## Case Study 3: From Manual Lead Qualification to Full Automation
 
+![Throughput](https://img.shields.io/badge/throughput-100%2B%2Fweek-22c55e?style=for-the-badge)
+![Speed](https://img.shields.io/badge/first_contact-%3C15min-22c55e?style=for-the-badge)
+![Leakage](https://img.shields.io/badge/leakage-%3C5%25-22c55e?style=for-the-badge)
+
 ### Challenge
 A solo real estate investor was manually reviewing 100+ inbound leads per week. Each lead required 5-10 minutes of research and a phone call to qualify. Effective capacity: ~40 leads/week actually contacted, 60+ going cold.
 
@@ -68,6 +88,10 @@ Speed-to-contact is the single biggest predictor of deal conversion in real esta
 ---
 
 ## Case Study 4: AI Agent Operating Cost vs. Revenue
+
+![Infra Cost](https://img.shields.io/badge/infra-$15%2Fmo-22c55e?style=for-the-badge)
+![Margin](https://img.shields.io/badge/margin-%3C2%25_of_revenue-22c55e?style=for-the-badge)
+![Products](https://img.shields.io/badge/products-18-f59e0b?style=for-the-badge)
 
 ### Challenge
 Demonstrate that a full AI automation stack can operate at costs low enough to serve SMBs profitably at accessible price points.
@@ -102,6 +126,10 @@ The competitive moat is the cost structure, not the AI itself. Competitors runni
 
 ## Case Study 5: Multi-Agent Coordination with Tiered Autonomy
 
+![Architecture](https://img.shields.io/badge/architecture-novel-8B5CF6?style=for-the-badge)
+![Agents](https://img.shields.io/badge/agents-2_coordinated-22c55e?style=for-the-badge)
+![Autonomy](https://img.shields.io/badge/tiers-4_levels-f59e0b?style=for-the-badge)
+
 ### Challenge
 Two AI agents (Clue as orchestrator, KORA as executor) needed to coordinate on lead processing, voice calls, and deal analysis without stepping on each other. Direct webhook messaging was fragile, with no conflict resolution or approval gates for sensitive actions.
 
@@ -121,4 +149,9 @@ Agent coordination is an infrastructure problem, not an AI problem. The agents d
 
 ---
 
-[Back to Portfolio](README.md)
+<div align="center">
+
+[![Back to Portfolio](https://img.shields.io/badge/Back_to-Portfolio-22c55e?style=for-the-badge)](README.md)
+[![Resume](https://img.shields.io/badge/Resume-view-000?style=for-the-badge)](RESUME.md)
+
+</div>

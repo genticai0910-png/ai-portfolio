@@ -1,10 +1,21 @@
+<div align="center">
+
 # How I Work
 
+### 8 Engineering Principles
+
 > Engineering principles that drive every system I build.
+
+[![Back to Portfolio](https://img.shields.io/badge/Back_to-Portfolio-22c55e?style=flat-square)](README.md)
+[![Resume](https://img.shields.io/badge/Resume-view-000?style=flat-square)](RESUME.md)
+[![Case Studies](https://img.shields.io/badge/Case_Studies-view-f59e0b?style=flat-square)](CASE_STUDIES.md)
+
+</div>
 
 ---
 
 ## 1. Local-First, Cloud-Fallback
+![Principle](https://img.shields.io/badge/principle-cost_zero-22c55e?style=flat-square)
 
 Every system starts with the question: **can this run on my own hardware?**
 
@@ -15,6 +26,7 @@ Not because cloud is bad. Because dependency is expensive. When your voice AI pi
 ---
 
 ## 2. Fallback Chains, Not Hope
+![Principle](https://img.shields.io/badge/principle-redundancy-26A5E4?style=flat-square)
 
 Every critical path gets a fallback chain. Not "we should add redundancy later." It's part of the initial architecture.
 
@@ -30,6 +42,7 @@ Each layer degrades gracefully. The user never knows a failover happened.
 ---
 
 ## 3. Ship Revenue, Not Demos
+![Principle](https://img.shields.io/badge/principle-production_first-f59e0b?style=flat-square)
 
 Nothing goes into production as a proof-of-concept. Every system processes real leads, serves real customers, or reduces real costs from day one.
 
@@ -40,6 +53,7 @@ This means building ugly-but-functional before pretty-but-theoretical. It means 
 ---
 
 ## 4. Small Models, Big Results
+![Principle](https://img.shields.io/badge/principle-efficiency-22c55e?style=flat-square)
 
 The industry defaults to "use the biggest model you can afford." I default to "use the smallest model that solves the problem."
 
@@ -54,6 +68,7 @@ A 1.5B parameter model fine-tuned on your data beats a 70B general model on your
 ---
 
 ## 5. Tiered Autonomy for AI Agents
+![Principle](https://img.shields.io/badge/principle-safety-8B5CF6?style=flat-square)
 
 Not everything should require human approval. Not everything should be autonomous. The answer is tiers.
 
@@ -69,6 +84,7 @@ This framework means AI agents can operate at speed on safe actions while mainta
 ---
 
 ## 6. Observability Is Not Optional
+![Principle](https://img.shields.io/badge/principle-visibility-DC382D?style=flat-square)
 
 If I can't see what a system is doing, I don't ship it. Every pipeline gets:
 - **State tracking** for every item in the pipeline
@@ -81,6 +97,7 @@ The n8n execution logs, PostgreSQL audit tables, and Telegram alerts form a moni
 ---
 
 ## 7. The 80/20 of Automation
+![Principle](https://img.shields.io/badge/principle-leverage-f59e0b?style=flat-square)
 
 Not everything should be automated. The goal is to automate the 80% of work that's repetitive and keep humans in the loop for the 20% that requires judgment.
 
@@ -93,6 +110,7 @@ The automation handles volume. The human handles nuance.
 ---
 
 ## 8. Own Your Infrastructure
+![Principle](https://img.shields.io/badge/principle-independence-22c55e?style=flat-square)
 
 SaaS tools are rentals. When the rental price goes up or the landlord changes the terms, you're stuck.
 
@@ -106,4 +124,9 @@ The only external dependencies are telephony (Twilio/Bland) and cloud LLMs (fall
 
 ---
 
-[Back to Portfolio](README.md)
+<div align="center">
+
+[![Back to Portfolio](https://img.shields.io/badge/Back_to-Portfolio-22c55e?style=for-the-badge)](README.md)
+[![Case Studies](https://img.shields.io/badge/Case_Studies-view-f59e0b?style=for-the-badge)](CASE_STUDIES.md)
+
+</div>
