@@ -7,7 +7,7 @@
 ![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-50%2B_workflows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-66_workflows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
 ![MLX](https://img.shields.io/badge/MLX-Apple_Silicon-000000?style=flat-square&logo=apple&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-white?style=flat-square)
 
@@ -16,6 +16,7 @@
 [![Arachne Claw](https://img.shields.io/badge/Arachne_Claw-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro/claw)
 [![Arachne Swarm](https://img.shields.io/badge/Arachne_Swarm-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro)
 [![Telegram Bot](https://img.shields.io/badge/Clue_Bot-Live-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/[CLUE_BOT])
+[![Stack](https://img.shields.io/badge/Secure_AI_Stack-Live-8B5CF6?style=for-the-badge)](https://stack.gentic.pro/stack)
 
 </div>
 
@@ -153,10 +154,10 @@ Telegram-native AI orchestrator. 30+ tools (web search, scraping, RAG, voice, CR
 
 #### n8n Workflow Engine
 ![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Workflows](https://img.shields.io/badge/50%2B-workflows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![Workflows](https://img.shields.io/badge/66-workflows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
 ![Webhooks](https://img.shields.io/badge/auth-HMAC%2BAPI_key-f59e0b?style=flat-square)
 
-50+ production workflows: lead ingestion, iRELOP scoring, voice dispatch, CRM sync (HubSpot), drip campaigns, revenue reconciliation, content distribution, Telegram alerting. All webhook-authenticated.
+66 production workflows: lead ingestion, iRELOP scoring, voice dispatch, CRM sync (HubSpot), drip campaigns, revenue reconciliation, content distribution, Telegram alerting. All webhook-authenticated.
 
 </td>
 </tr>
@@ -321,9 +322,9 @@ Stripe event tracking, subscription management, MRR snapshots, daily revenue rec
 #### KORA Tactical Agent
 ![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
 ![Telegram](https://img.shields.io/badge/Telegram-@kora__ops__bot-26A5E4?style=flat-square&logo=telegram&logoColor=white)
-![LLM](https://img.shields.io/badge/chain-qwen3_>_kimi_>_gemini-22c55e?style=flat-square)
+![LLM](https://img.shields.io/badge/chain-gemma4_>_kimi_>_gemini-22c55e?style=flat-square)
 
-Autonomous operations agent. Owns voice ops, Gumroad, pipeline execution. Peer to Clue (not subordinate). $0 LLM chain (qwen3:8b > kimi-k2 > gemini-flash-lite). Zombie prevention, port-check before launch.
+Autonomous operations agent. Owns voice ops, Gumroad, pipeline execution. Peer to Clue (not subordinate). $0 LLM chain (gemma4:e4b > kimi-k2 > gemini-flash-lite). Zombie prevention, port-check before launch.
 
 </td>
 <td width="50%">
@@ -462,6 +463,53 @@ Multi-agent task routing kanban board. Routes tasks to Claude, Codex, Gemini, an
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+#### prop-enricher: $0/mo Lead Enrichment
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Cost](https://img.shields.io/badge/cost-$0%2Fmo-22c55e?style=flat-square)
+![Markets](https://img.shields.io/badge/markets-NV%2FAZ%2FFL%2FNC%2FSC%2FTX-f59e0b?style=flat-square)
+
+FastAPI service wrapping HomeHarvest (Realtor.com). Returns estimated value, equity (30yr amortization model), years owned, tax annual — no API key required. Deployed as VPS Docker container with semaphore-serialized rate limiting. Feeds iRELOP pipeline at $0/month vs $200+/mo BatchData.
+
+</td>
+<td width="50%">
+
+#### Operator Memory Architecture
+![Status](https://img.shields.io/badge/status-live-22c55e?style=flat-square)
+![Tiers](https://img.shields.io/badge/tiers-5_memory-8B5CF6?style=flat-square)
+![MCP](https://img.shields.io/badge/MCP-4_tools-22c55e?style=flat-square)
+
+Production blueprint for tiered agent cognition: Working / Episodic / Semantic / Financial / Risk memory. Includes schemas, poisoning defenses, reflection prompts, cost model, and MCP integration spec. Interactive reference at [stack.gentic.pro/stack](https://stack.gentic.pro/stack).
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### Ceiba Core: Agent Execution Control Plane
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Gateway](https://img.shields.io/badge/ceiba.agency-live-22c55e?style=flat-square)
+![Policies](https://img.shields.io/badge/policies-10-f59e0b?style=flat-square)
+
+Policy-enforced execution control plane for autonomous agents. Redis-backed gateway, 6 DB tables, 10 active policies, 2 tenants. Telegram webhook for approval-gated actions. Prevents agents from executing without policy clearance.
+
+**[ceiba.agency](https://ceiba.agency)**
+
+</td>
+<td width="50%">
+
+#### Langfuse v3: LLM Observability
+![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
+![Self-Hosted](https://img.shields.io/badge/self--hosted-trace.gentic.pro-22c55e?style=flat-square)
+
+Self-hosted Langfuse v3 at `trace.gentic.pro`. Full LLM tracing, cost tracking, and prompt versioning wired into OpenClaw + KORA. Zero vendor dependency, all traces on-prem.
+
+**[trace.gentic.pro](https://trace.gentic.pro)**
+
+</td>
+</tr>
 </table>
 
 ---
@@ -493,7 +541,13 @@ Proprietary 100-point lead qualification model weighting Motivation (40), Opport
 Inline directive architecture for AI-guided phone conversations. State tracker injects dynamic prompts per-turn. Synthetic training pipeline generating 1,500+ multi-turn conversations with adversarial seller personas. Handles evasive, emotional, and resistant callers.
 
 ### [n8n Workflow Engine](projects/n8n-workflows.md)
-50+ production workflows handling lead ingestion, qualification, voice agent orchestration, CRM sync (HubSpot), drip campaigns, revenue reconciliation, and real-time Telegram alerting across multiple business verticals.
+66 production workflows handling lead ingestion, qualification, voice agent orchestration, CRM sync (HubSpot), drip campaigns, revenue reconciliation, and real-time Telegram alerting across multiple business verticals.
+
+### [prop-enricher: $0/mo Property Enrichment](projects/prop-enricher.md)
+FastAPI microservice wrapping HomeHarvest (Realtor.com). No API key, no cost. Returns estimated value, equity via 30yr amortization model, years owned, tax data. Deployed on VPS Docker, semaphore-serialized. Feeds iRELOP scoring pipeline across NV, AZ, FL, NC, SC, TX.
+
+### [Operator Memory Architecture](https://stack.gentic.pro/stack)
+Production blueprint for tiered agent cognition. 5-tier model (Working / Episodic / Semantic / Financial / Risk) with schemas, poisoning defenses, reflection prompts, cost model, and MCP integration spec. Live at [stack.gentic.pro/stack](https://stack.gentic.pro/stack).
 
 ### [Scrapling Infrastructure](projects/scrapling-infra.md)
 Dual-deployment web scraping: local node (native + MCP server) + cloud Docker (HTTP MCP for n8n). StealthyFetcher for anti-bot/Cloudflare bypass. Adaptive parsing self-heals on DOM changes.
@@ -538,7 +592,7 @@ Dual-deployment web scraping: local node (native + MCP server) + cloud Docker (H
 
 ## Business Context
 
-**By the numbers:** 42 production services, 32 cloud containers, 18 local managed services, 50+ n8n workflows, 7 custom-trained models, 15+ PG schemas, 12 Qdrant collections, 18 digital products.
+**By the numbers:** 45+ production services, 32 cloud containers, 18 local managed services, 66 n8n workflows, 7 custom-trained models, 15+ PG schemas, 12 Qdrant collections, 18 digital products.
 
 These systems power three active businesses:
 
@@ -695,6 +749,7 @@ Real outcomes, real numbers. No demos.
 | [Cloud to Local TTS](CASE_STUDIES.md#case-study-2-zero-cost-tts-for-multi-language-voice-agents) | $200-400/mo projected | **$0/mo** |
 | [Manual to Automated Qualification](CASE_STUDIES.md#case-study-3-from-manual-lead-qualification-to-full-automation) | ~40 leads/week contacted | **100+ leads/week, <15min response** |
 | [Operating Cost Analysis](CASE_STUDIES.md#case-study-4-ai-agent-operating-cost-vs-revenue) | Cloud-everything | **<2% of revenue per client** |
+| [Zero-Cost Lead Enrichment](CASE_STUDIES.md#case-study-6-zero-cost-lead-enrichment-pipeline) | $200+/mo BatchData API | **$0/mo HomeHarvest + equity model** |
 
 [Read full case studies](CASE_STUDIES.md)
 
@@ -702,7 +757,7 @@ Real outcomes, real numbers. No demos.
 
 ## Quick Links
 
-[Resume](RESUME.md) | [Case Studies](CASE_STUDIES.md) | [Open Source](open-source/) | [How I Work](HOW_I_WORK.md) | [Live Demo: t.me/[CLUE_BOT]](https://t.me/[CLUE_BOT]) | [Arachne Claw: swarm.gentic.pro/claw](https://swarm.gentic.pro/claw)
+[Resume](RESUME.md) | [Case Studies](CASE_STUDIES.md) | [Open Source](open-source/) | [How I Work](HOW_I_WORK.md) | [Live Demo: t.me/[CLUE_BOT]](https://t.me/[CLUE_BOT]) | [Arachne Claw: swarm.gentic.pro/claw](https://swarm.gentic.pro/claw) | [Secure AI Stack: stack.gentic.pro/stack](https://stack.gentic.pro/stack)
 
 ---
 
@@ -731,7 +786,7 @@ Real outcomes, real numbers. No demos.
 ![Redis](https://img.shields.io/badge/Redis-Cache-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Qdrant](https://img.shields.io/badge/Qdrant-Vector-24B47E?style=flat-square)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-50%2B_flows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-66_flows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
 
 #### Frontend & Tools
 ![Next.js](https://img.shields.io/badge/Next.js-14-000?style=flat-square&logo=nextdotjs&logoColor=white)

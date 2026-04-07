@@ -149,6 +149,40 @@ Agent coordination is an infrastructure problem, not an AI problem. The agents d
 
 ---
 
+## Case Study 6: Zero-Cost Lead Enrichment Pipeline
+
+![Savings](https://img.shields.io/badge/savings-$200%2Fmo-22c55e?style=for-the-badge)
+![Cost](https://img.shields.io/badge/cost-$0%2Fmo-22c55e?style=for-the-badge)
+![Markets](https://img.shields.io/badge/markets-NV%2FAZ%2FFL%2FNC%2FSC%2FTX-f59e0b?style=for-the-badge)
+
+### Challenge
+The iRELOP lead scoring pipeline needed property data (estimated value, equity, years owned, tax info) to score HOT/WARM/COOL/PASS tiers. The commercial solution (BatchData API) costs $200+/month with minimum commitments. County APIs returned HTML, not JSON. Zillow and Redfin blocked server-side requests. ATTOM required an enterprise key.
+
+### Solution
+Built `prop-enricher`: a FastAPI microservice wrapping HomeHarvest, an open-source Realtor.com scraper requiring no API key. Deployed as a Docker container on the VPS. Added a 30-year amortization equity model (10% down, 6.5% rate) to derive estimated equity from purchase price. Semaphore-serialized requests to avoid rate limiting.
+
+### Results
+| Metric | Before | After |
+|--------|--------|-------|
+| Monthly enrichment cost | $200+ (BatchData) | **$0** |
+| Data sources explored | Zillow, Redfin, ATTOM, Maricopa, Propwire | **Realtor.com via HomeHarvest** |
+| Markets covered | Depends on paid tier | **NV, AZ, FL, NC, SC, TX** |
+| Pipeline uptime | API dependency | **Self-hosted, no key required** |
+| Time to first HOT lead | Manual flags required | **Automatic enrichment + override support** |
+
+### Smoke Test Results
+| Lead | Score | Tier | Telegram Alert |
+|------|-------|------|----------------|
+| Auto-enriched (Pahrump, NV) | 29 | PASS | — |
+| Manual override (tax + pre_foreclosure) | 59 | COOL | — |
+| High equity + tax delinquent | 77 | WARM | — |
+| Tax + pre + absentee flags | 95 | HOT | ✅ Fired |
+
+### Key Insight
+Paid data APIs are the default assumption in RE tech, but most of the signals needed for early-funnel qualification are available via public scrapers. The motivation flags (tax_delinquent, pre_foreclosure) that push a lead to HOT often come from the intake form itself — from the person dispatching the lead. Paid data becomes valuable at scale; at <100 leads/week it's just overhead.
+
+---
+
 <div align="center">
 
 [![Back to Portfolio](https://img.shields.io/badge/Back_to-Portfolio-22c55e?style=for-the-badge)](README.md)
