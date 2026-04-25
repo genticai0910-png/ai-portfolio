@@ -295,7 +295,6 @@ Production-tested modules. MIT licensed.
 |--------|-------------|
 | **[LLM Fallback Router](open-source/llm-fallback-router/)** | Multi-provider routing with circuit breakers and latency tracking |
 | **[Conversation State Tracker](open-source/conversation-state-tracker/)** | Real-time question coverage, evasion detection, and inline directive generation |
-| **[n8n Patterns](open-source/n8n-patterns/)** | Webhook receivers, LLM+JSON extraction, retry logic, dead letter queues |
 
 [Browse all open source modules](open-source/)
 
