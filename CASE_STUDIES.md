@@ -131,7 +131,7 @@ The competitive moat is the cost structure, not the AI itself. Competitors runni
 ![Autonomy](https://img.shields.io/badge/tiers-4_levels-f59e0b?style=for-the-badge)
 
 ### Challenge
-Two AI agents (Clue as orchestrator, KORA as executor) needed to coordinate on lead processing, voice calls, and deal analysis without stepping on each other. Direct webhook messaging was fragile, with no conflict resolution or approval gates for sensitive actions.
+Two production AI agents — an orchestrator and a tactical executor — needed to coordinate on lead processing, voice calls, and deal analysis without stepping on each other. Direct webhook messaging was fragile, with no conflict resolution or approval gates for sensitive actions.
 
 ### Solution
 Built Markspace, a stigmergy-based coordination protocol. Agents write "marks" (intents, actions, observations) into a shared space. A Guard enforces identity and permissions per scope. Outbound calls/SMS require human approval via Telegram inline keyboard. Four autonomy tiers control what agents can do without human oversight.
@@ -180,6 +180,46 @@ Built `prop-enricher`: a FastAPI microservice wrapping HomeHarvest, an open-sour
 
 ### Key Insight
 Paid data APIs are the default assumption in RE tech, but most of the signals needed for early-funnel qualification are available via public scrapers. The motivation flags (tax_delinquent, pre_foreclosure) that push a lead to HOT often come from the intake form itself — from the person dispatching the lead. Paid data becomes valuable at scale; at <100 leads/week it's just overhead.
+
+---
+
+## Conversation Engine + iRELOP Lead Scoring {#conversation-engine}
+
+<!-- TODO: Gabe to fill — target structure:
+- Problem (what was being done manually / what cloud API was costing)
+- Approach (why inline directives vs. function calling, why local model)
+- Architecture (state tracker, training pipeline, scoring routing)
+- Outcome (real numbers: leads processed, accuracy, cost replaced)
+- What I'd do differently
+-->
+
+> **Covered in brief:** See [Case Study 1](#case-study-1-replacing-cloud-ai-with-local-inference) and [Case Study 3](#case-study-3-from-manual-lead-qualification-to-full-automation) above for the inference and pipeline outcomes. Full deep-dive coming.
+
+---
+
+## Ceiba Core — Agent Execution Control Plane {#ceiba-core}
+
+<!-- TODO: Gabe to fill — target structure:
+- Problem (agents executing without oversight, blast radius issue)
+- Approach (policy plane vs. hardcoded guards)
+- Architecture (Redis gateway, policy DSL, approval webhooks)
+- Outcome (number of policy hits, agents using it, false-positive rate)
+- What I'd do differently
+-->
+
+---
+
+## Arachne Swarm — Multi-Agent Orchestration {#arachne-swarm}
+
+<!-- TODO: Gabe to fill — target structure:
+- Problem (webhook spaghetti at 3+ agents)
+- Approach (stigmergy / Markspace, why it scales)
+- Architecture (mark types, guard scopes, conflict resolution)
+- Outcome (agents coordinated, conflicts auto-resolved)
+- What I'd do differently
+-->
+
+> **Covered in brief:** See [Case Study 5](#case-study-5-multi-agent-coordination-with-tiered-autonomy) above for the coordination architecture and outcomes. Full deep-dive coming.
 
 ---
 
