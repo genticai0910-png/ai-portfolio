@@ -44,6 +44,32 @@
 
 ---
 
+## How It Fits Together
+
+```
+                        INGESTION LAYER
+  Webhooks, Scrapling, Firecrawl, Voice Transcripts, Web Forms
+                            |
+                    INTELLIGENCE LAYER
+  VSAI Intent Model, iRELOP Scoring, RAG (Qdrant), CE State Tracker
+  LLM Routing: Local MLX -> Ollama -> Cloud (Grok -> Gemini -> Haiku)
+                            |
+                   COORDINATION LAYER
+  Markspace Protocol, Tiered Autonomy, Guard-Enforced Scopes
+  Orchestrator <-> Executor agent peer sync
+                            |
+                   ORCHESTRATION LAYER
+  n8n Workflows, PostgreSQL, Redis, Budget Management
+                            |
+                      ACTION LAYER
+  Voice Agents (Bland/Twilio), TTS, CRM Sync, Email (Resend)
+  Arachne Swarm Dashboard, Real-time Alerting
+```
+
+> Five layers, one operator. Local-first inference where possible, cloud for control plane and customer-facing surfaces, fallback chains on every critical path.
+
+---
+
 ## Notable Builds
 
 > Everything here is live, deployed, and processing real data. Not demos.
@@ -531,30 +557,6 @@ Production blueprint for tiered agent cognition. 5-tier model (Working / Episodi
 
 ### [Scrapling Infrastructure](projects/scrapling-infra.md)
 Dual-deployment web scraping: local node (native + MCP server) + cloud Docker (HTTP MCP for n8n). StealthyFetcher for anti-bot/Cloudflare bypass. Adaptive parsing self-heals on DOM changes.
-
----
-
-## Architecture Overview
-
-```
-                        INGESTION LAYER
-  Webhooks, Scrapling, Firecrawl, Voice Transcripts, Web Forms
-                            |
-                    INTELLIGENCE LAYER
-  VSAI Intent Model, iRELOP Scoring, RAG (Qdrant), CE State Tracker
-  LLM Routing: Local MLX -> Ollama -> Cloud (Grok -> Gemini -> Haiku)
-                            |
-                   COORDINATION LAYER
-  Markspace Protocol, Tiered Autonomy, Guard-Enforced Scopes
-  Clue (orchestrator) <-> KORA (executor) peer sync
-                            |
-                   ORCHESTRATION LAYER
-  n8n Workflows, PostgreSQL, Redis, Budget Management
-                            |
-                      ACTION LAYER
-  Voice Agents (Bland/Twilio), TTS, CRM Sync, Email (Resend)
-  Arachne Swarm Dashboard, Telegram Alerts
-```
 
 ---
 
