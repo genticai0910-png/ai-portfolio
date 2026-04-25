@@ -36,7 +36,7 @@
 | **AI Agent Orchestration** | Arachne Swarm dashboard, Markspace coordination protocol, tiered autonomy | Production |
 | **Voice AI** | Bland AI, Twilio, Custom TTS (Piper/Edge TTS), intent classification | Production |
 | **Custom Model Training** | Qwen 2.5 1.5B + LoRA, MLX inference, Ollama fallback, synthetic data pipelines | Production |
-| **Workflow Automation** | n8n (50+ workflows), webhooks, PostgreSQL, Redis | Production |
+| **Workflow Automation** | n8n (66 workflows), webhooks, PostgreSQL, Redis | Production |
 | **Cost-Optimized LLM Routing** | Multi-provider fallback chains, local-first inference, complexity-based routing | Production |
 | **Lead Intelligence** | Proprietary scoring (iRELOP), RAG pipelines, Qdrant vector search | Production |
 | **Web Intelligence** | Scrapling, Firecrawl, Crawl4AI, anti-bot bypass, structured extraction | Production |
@@ -121,7 +121,7 @@
 
 | System | What It Does | Stack |
 |---|---|---|
-| **VSAI Intent Classifier** | Fine-tuned 9-class voice intent model, 95.5% accuracy, $0/mo inference | Qwen 2.5, LoRA, MLX |
+| **VSAI Intent Classifier** | Fine-tuned 9-class voice intent model, 96.6% accuracy, $0/mo inference | Qwen 2.5, LoRA, MLX |
 | **Hybrid Compute Architecture** | Local Apple Silicon + cloud Docker, 3-tier failover | Docker, SSH tunnels, LaunchAgent |
 | **n8n Workflow Engine** | 66 production workflows: ingestion, scoring, voice dispatch, CRM, drip, reconciliation | n8n, Postgres, Redis |
 | **Multi-Language TTS** | EN/ES/ZH text-to-speech with three-layer failover | Piper, Edge TTS, espeak |

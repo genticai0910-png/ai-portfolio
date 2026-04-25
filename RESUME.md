@@ -12,9 +12,9 @@
 > I build production AI systems that run at $0/month and generate revenue from day one.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-README-22c55e?style=flat-square)](README.md)
-[![Case Studies](https://img.shields.io/badge/Case_Studies-4_studies-f59e0b?style=flat-square)](CASE_STUDIES.md)
+[![Case Studies](https://img.shields.io/badge/Case_Studies-6_studies-f59e0b?style=flat-square)](CASE_STUDIES.md)
 [![How I Work](https://img.shields.io/badge/How_I_Work-8_principles-8B5CF6?style=flat-square)](HOW_I_WORK.md)
-[![Email](https://img.shields.io/badge/Email-gabe%40gentic.pro-blue?style=flat-square)](mailto:gabe@gentic.pro)
+[![Email](https://img.shields.io/badge/Email-gabriel%40gentic.pro-blue?style=flat-square)](mailto:gabriel@gentic.pro)
 
 </div>
 
@@ -61,7 +61,7 @@ End-to-end voice agent design, custom TTS (Piper/Edge TTS), real-time intent cla
 ![n8n](https://img.shields.io/badge/n8n-50%2B_flows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
 ![Webhooks](https://img.shields.io/badge/webhooks-HMAC-f59e0b?style=flat-square)
 
-50+ production workflows, webhook-driven event systems, lead processing pipelines, multi-business orchestration, approval-gated outbound
+66 production workflows, webhook-driven event systems, lead processing pipelines, multi-business orchestration, approval-gated outbound
 
 </td>
 </tr>
@@ -155,7 +155,7 @@ Proprietary iRELOP scoring (Motivation 40, Opportunity 35, Profile 25), automate
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/gabe%40gentic.pro-contact-22c55e?style=for-the-badge)](mailto:gabe@gentic.pro)
+[![Email](https://img.shields.io/badge/gabriel%40gentic.pro-contact-22c55e?style=for-the-badge)](mailto:gabriel@gentic.pro)
 [![Portfolio](https://img.shields.io/badge/Portfolio-README-000?style=for-the-badge)](README.md)
 [![Arachne Claw](https://img.shields.io/badge/Arachne_Claw-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro/claw)
 
