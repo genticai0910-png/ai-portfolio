@@ -131,7 +131,7 @@ The competitive moat is the cost structure, not the AI itself. Competitors runni
 ![Autonomy](https://img.shields.io/badge/tiers-4_levels-f59e0b?style=for-the-badge)
 
 ### Challenge
-Two AI agents (Clue as orchestrator, KORA as executor) needed to coordinate on lead processing, voice calls, and deal analysis without stepping on each other. Direct webhook messaging was fragile, with no conflict resolution or approval gates for sensitive actions.
+Two production AI agents — an orchestrator and a tactical executor — needed to coordinate on lead processing, voice calls, and deal analysis without stepping on each other. Direct webhook messaging was fragile, with no conflict resolution or approval gates for sensitive actions.
 
 ### Solution
 Built Markspace, a stigmergy-based coordination protocol. Agents write "marks" (intents, actions, observations) into a shared space. A Guard enforces identity and permissions per scope. Outbound calls/SMS require human approval via Telegram inline keyboard. Four autonomy tiers control what agents can do without human oversight.

@@ -119,7 +119,7 @@ Proprietary iRELOP scoring (Motivation 40, Opportunity 35, Profile 25), automate
 | Layer | Technologies |
 |-------|-------------|
 | Models | Qwen 2.5, MLX, Ollama, LoRA, xAI Grok, Gemini, Claude |
-| Agents | Arachne Swarm, Markspace, OpenClaw/Clue, KORA |
+| Agents | Arachne Swarm, Markspace, private orchestrator + executor agents |
 | Voice | Bland AI, Twilio, Piper, Edge TTS |
 | Orchestration | n8n, webhooks, cron, Docker, Traefik |
 | Data | PostgreSQL, Redis, Qdrant, Supabase |
