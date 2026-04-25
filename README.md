@@ -22,30 +22,12 @@
 
 ---
 
-<table>
-<tr>
-<td width="25%" align="center">
-<img src="https://img.shields.io/badge/96.6%25-accuracy-22c55e?style=for-the-badge" /><br/>
-<sub>Custom Intent Model</sub>
-</td>
-<td width="25%" align="center">
-<img src="https://img.shields.io/badge/$0%2Fmo-inference-22c55e?style=for-the-badge" /><br/>
-<sub>Local ML Inference</sub>
-</td>
-<td width="25%" align="center">
-<img src="https://img.shields.io/badge/100%2B-leads%2Fweek-22c55e?style=for-the-badge" /><br/>
-<sub>Automated Pipeline</sub>
-</td>
-<td width="25%" align="center">
-<img src="https://img.shields.io/badge/%3C2%25-infra_cost-22c55e?style=for-the-badge" /><br/>
-<sub>Of Revenue Per Client</sub>
-</td>
-</tr>
-</table>
+> **Built and operated by [Gabe Acosta](https://github.com/genticai0910-png).** Operations leader (10+ years retail, automotive, federal disaster recovery) running three businesses on one self-built AI stack. Every system below is in production — no demos, no experiments.
+
+> **Open to:** AI infrastructure roles, founding engineer / staff IC positions, technical advisory engagements, and Gentic AI partner conversations.
+> **Contact:** gabriel@gentic.pro
 
 ---
-
-I design, deploy, and operate end-to-end AI infrastructure from fine-tuned local models to multi-platform voice agents to full lead-processing pipelines. Everything below is **live in production**, processing real leads and serving real customers.
 
 ## What I Build
 
