@@ -183,6 +183,46 @@ Paid data APIs are the default assumption in RE tech, but most of the signals ne
 
 ---
 
+## Conversation Engine + iRELOP Lead Scoring {#conversation-engine}
+
+<!-- TODO: Gabe to fill — target structure:
+- Problem (what was being done manually / what cloud API was costing)
+- Approach (why inline directives vs. function calling, why local model)
+- Architecture (state tracker, training pipeline, scoring routing)
+- Outcome (real numbers: leads processed, accuracy, cost replaced)
+- What I'd do differently
+-->
+
+> **Covered in brief:** See [Case Study 1](#case-study-1-replacing-cloud-ai-with-local-inference) and [Case Study 3](#case-study-3-from-manual-lead-qualification-to-full-automation) above for the inference and pipeline outcomes. Full deep-dive coming.
+
+---
+
+## Ceiba Core — Agent Execution Control Plane {#ceiba-core}
+
+<!-- TODO: Gabe to fill — target structure:
+- Problem (agents executing without oversight, blast radius issue)
+- Approach (policy plane vs. hardcoded guards)
+- Architecture (Redis gateway, policy DSL, approval webhooks)
+- Outcome (number of policy hits, agents using it, false-positive rate)
+- What I'd do differently
+-->
+
+---
+
+## Arachne Swarm — Multi-Agent Orchestration {#arachne-swarm}
+
+<!-- TODO: Gabe to fill — target structure:
+- Problem (webhook spaghetti at 3+ agents)
+- Approach (stigmergy / Markspace, why it scales)
+- Architecture (mark types, guard scopes, conflict resolution)
+- Outcome (agents coordinated, conflicts auto-resolved)
+- What I'd do differently
+-->
+
+> **Covered in brief:** See [Case Study 5](#case-study-5-multi-agent-coordination-with-tiered-autonomy) above for the coordination architecture and outcomes. Full deep-dive coming.
+
+---
+
 <div align="center">
 
 [![Back to Portfolio](https://img.shields.io/badge/Back_to-Portfolio-22c55e?style=for-the-badge)](README.md)
