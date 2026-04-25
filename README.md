@@ -360,9 +360,31 @@ Real outcomes, real numbers. No demos.
 
 ---
 
-<div align="center">
+## About
 
-gabe@gentic.pro | [Arachne Swarm](https://swarm.gentic.pro) | [Gentic AI](https://gentic.pro)
+I spent 10+ years running operations — high-volume retail, automotive sales, and federal disaster recovery (FEMA Public Assistance) — before going full-time on AI infrastructure in 2023. The combination matters: I've sat in P&L meetings *and* I ship the code. Most AI consultants can do one or the other.
+
+Today I run three businesses on one self-built stack:
+- **DealiQ** — AI-powered real estate investment (Phoenix, Vegas, AZ, UT)
+- **Gentic AI** — AI automation platform for local SMBs
+- **VoiceScheduleAI** — AI appointment scheduling
+
+The portfolio above is the infrastructure that powers them.
+
+---
+
+## Engagement
+
+**Hire me / partner with me / advise:** gabriel@gentic.pro
+**Code:** [github.com/genticai0910-png](https://github.com/genticai0910-png)
+**Resume:** [RESUME.md](./RESUME.md)
+**Engineering principles:** [HOW_I_WORK.md](./HOW_I_WORK.md)
+
+If you're building AI infrastructure for SMBs, real estate, or any vertical where cost-per-inference matters more than model size, I'd like to talk.
+
+---
+
+<div align="center">
 
 <sub>All systems described are live in production. Proprietary model weights, scoring formulas, and business logic are not included in this repo. Open source modules are MIT licensed.</sub>
 
