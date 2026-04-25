@@ -15,7 +15,7 @@
 
 [![Arachne Claw](https://img.shields.io/badge/Arachne_Claw-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro/claw)
 [![Arachne Swarm](https://img.shields.io/badge/Arachne_Swarm-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro)
-[![Telegram Bot](https://img.shields.io/badge/Clue_Bot-Live-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/[CLUE_BOT])
+
 [![Stack](https://img.shields.io/badge/Secure_AI_Stack-Live-8B5CF6?style=for-the-badge)](https://stack.gentic.pro/stack)
 
 </div>
@@ -142,12 +142,11 @@ $50/mo agent sandbox. **Apple-style glassmorphism cards**, animated spider web b
 
 #### OpenClaw / Clue AI Agent
 ![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Telegram](https://img.shields.io/badge/Telegram-bot-26A5E4?style=flat-square&logo=telegram&logoColor=white)
 ![Tools](https://img.shields.io/badge/30%2B-tools-22c55e?style=flat-square)
 
-Telegram-native AI orchestrator. 30+ tools (web search, scraping, RAG, voice, CRM, scoring). Cost-optimized LLM chain (Grok, Gemini, Haiku). Voice input/output with TTS. Planning engine with persistent multi-step plans.
+Private AI orchestrator powering daily operations across three businesses. 30+ integrated tools (web search, scraping, RAG, voice, CRM, scoring). Cost-optimized LLM chain (Grok → Gemini → Haiku). Voice input/output with TTS. Planning engine with persistent multi-step plans. Surfaces and access intentionally not public.
 
-**[t.me/[CLUE_BOT]](https://t.me/[CLUE_BOT])**
+*Private interface — handle not public.*
 
 </td>
 <td width="50%">
@@ -321,10 +320,9 @@ Stripe event tracking, subscription management, MRR snapshots, daily revenue rec
 
 #### KORA Tactical Agent
 ![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Telegram](https://img.shields.io/badge/Telegram-@kora__ops__bot-26A5E4?style=flat-square&logo=telegram&logoColor=white)
 ![LLM](https://img.shields.io/badge/chain-gemma4_>_kimi_>_gemini-22c55e?style=flat-square)
 
-Autonomous operations agent. Owns voice ops, Gumroad, pipeline execution. Peer to Clue (not subordinate). $0 LLM chain (gemma4:e4b > kimi-k2 > gemini-flash-lite). Zombie prevention, port-check before launch.
+Autonomous operations agent. Owns voice ops, Gumroad, pipeline execution. Peer to the orchestrator agent (not subordinate). Private interface. $0 LLM chain (gemma4:e4b > kimi-k2 > gemini-flash-lite). Zombie prevention, port-check before launch.
 
 </td>
 <td width="50%">
@@ -757,7 +755,7 @@ Real outcomes, real numbers. No demos.
 
 ## Quick Links
 
-[Resume](RESUME.md) | [Case Studies](CASE_STUDIES.md) | [Open Source](open-source/) | [How I Work](HOW_I_WORK.md) | [Live Demo: t.me/[CLUE_BOT]](https://t.me/[CLUE_BOT]) | [Arachne Claw: swarm.gentic.pro/claw](https://swarm.gentic.pro/claw) | [Secure AI Stack: stack.gentic.pro/stack](https://stack.gentic.pro/stack)
+[Resume](RESUME.md) | [Case Studies](CASE_STUDIES.md) | [Open Source](open-source/) | [How I Work](HOW_I_WORK.md) | [Arachne Claw: swarm.gentic.pro/claw](https://swarm.gentic.pro/claw) | [Secure AI Stack: stack.gentic.pro/stack](https://stack.gentic.pro/stack)
 
 ---
 

@@ -158,6 +158,6 @@ Proprietary iRELOP scoring (Motivation 40, Opportunity 35, Profile 25), automate
 [![Email](https://img.shields.io/badge/gabe%40gentic.pro-contact-22c55e?style=for-the-badge)](mailto:gabe@gentic.pro)
 [![Portfolio](https://img.shields.io/badge/Portfolio-README-000?style=for-the-badge)](README.md)
 [![Arachne Claw](https://img.shields.io/badge/Arachne_Claw-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro/claw)
-[![Telegram](https://img.shields.io/badge/Clue_Bot-Live-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/[CLUE_BOT])
+
 
 </div>
