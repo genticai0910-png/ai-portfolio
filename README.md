@@ -70,495 +70,75 @@
 
 ---
 
-## Notable Builds
+## Flagship Systems
 
-> Everything here is live, deployed, and processing real data. Not demos.
+> Three systems that show how I think. Each has a dedicated case study with architecture, decision history, and outcomes.
 
-<table>
-<tr>
-<td width="50%">
+### 1. Conversation Engine + iRELOP Lead Scoring
 
-#### Arachne Swarm Dashboard
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Next.js](https://img.shields.io/badge/Next.js-14-000?style=flat-square&logo=nextdotjs&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-realtime-blue?style=flat-square)
+**The work:** Proprietary 100-point lead qualification model (Motivation 40, Opportunity 35, Profile 25) feeding an inline-directive conversation engine. State tracker injects per-turn directives to handle evasive, emotional, and resistant callers across 1,500+ synthetic training conversations.
 
-Full agent orchestration platform with **animated spider web visualization** showing agents as spiders crawling a web in real-time. Kanban pipeline, budget gauge, activity feed, multi-tenant isolation, Stripe billing.
+**Why it matters:** Most "AI sales agents" are wrappers around GPT-4 reading a script. This is a trained, evaluated, state-aware system that scores in real-time and routes HOT/WARM/COOL/PASS to voice/SMS/email/archive automatically.
 
-**[swarm.gentic.pro](https://swarm.gentic.pro)**
+**Stack:** Qwen 2.5, LoRA, MLX, n8n state machine, Postgres FOR UPDATE locking, Twilio, Bland AI
 
-</td>
-<td width="50%">
-
-#### Arachne Claw Landing Page
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Glassmorphism](https://img.shields.io/badge/design-glassmorphism-8B5CF6?style=flat-square)
-![Canvas](https://img.shields.io/badge/canvas-animated_web-22c55e?style=flat-square)
-
-$50/mo agent sandbox. **Apple-style glassmorphism cards**, animated spider web background with 22 crawling spiders (HiDPI canvas), chat demo with visual report card, 3-tier pricing.
-
-**[swarm.gentic.pro/claw](https://swarm.gentic.pro/claw)**
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Markspace Coordination Protocol
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Novel](https://img.shields.io/badge/architecture-novel-f59e0b?style=flat-square)
-![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=flat-square&logo=python&logoColor=white)
-
-**Stigmergy-based multi-agent coordination**. Agents write marks (intents, actions, observations) into a shared space. Guard enforces identity, scopes, and conflict policies. 4-tier autonomy model controls what agents can do without human approval.
-
-</td>
-<td width="50%">
-
-#### VSAI Intent Classifier
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Accuracy](https://img.shields.io/badge/accuracy-96.6%25-22c55e?style=flat-square)
-![Cost](https://img.shields.io/badge/cost-$0%2Fmo-22c55e?style=flat-square)
-
-**Fine-tuned Qwen 2.5 1.5B** with LoRA for voice call intent classification. 9 classes, runs on Apple Silicon via MLX. 3-tier cascade with Ollama and cloud fallback. Replaced $300-500/mo cloud APIs.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Conversation Engine v5
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Architecture](https://img.shields.io/badge/inline-directives-8B5CF6?style=flat-square)
-![Training](https://img.shields.io/badge/1500%2B-synthetic_convos-f59e0b?style=flat-square)
-
-**Inline directive architecture** for AI phone conversations. State tracker injects dynamic prompts per-turn. Synthetic training pipeline with adversarial seller personas (evasive, emotional, resistant). 10-question coverage tracking.
-
-</td>
-<td width="50%">
-
-#### iRELOP Lead Scoring
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Proprietary](https://img.shields.io/badge/IP-proprietary-f59e0b?style=flat-square)
-![100pt](https://img.shields.io/badge/score-100_point-22c55e?style=flat-square)
-
-**Proprietary 100-point scoring model**. Motivation (40) + Opportunity (35) + Profile (25). Powers automated routing: HOT >= 80 (voice), WARM >= 60 (SMS), COOL >= 40 (email), PASS < 40 (archive). GAN pipeline with Strategist + Auditor agents.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### OpenClaw / Clue AI Agent
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Tools](https://img.shields.io/badge/30%2B-tools-22c55e?style=flat-square)
-
-Private AI orchestrator powering daily operations across three businesses. 30+ integrated tools (web search, scraping, RAG, voice, CRM, scoring). Cost-optimized LLM chain (Grok → Gemini → Haiku). Voice input/output with TTS. Planning engine with persistent multi-step plans. Surfaces and access intentionally not public.
-
-*Private interface — handle not public.*
-
-</td>
-<td width="50%">
-
-#### n8n Workflow Engine
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Workflows](https://img.shields.io/badge/66-workflows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-![Webhooks](https://img.shields.io/badge/auth-HMAC%2BAPI_key-f59e0b?style=flat-square)
-
-66 production workflows: lead ingestion, iRELOP scoring, voice dispatch, CRM sync (HubSpot), drip campaigns, revenue reconciliation, content distribution, Telegram alerting. All webhook-authenticated.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Hybrid Compute Architecture
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Cost](https://img.shields.io/badge/cost-$15%2Fmo-22c55e?style=flat-square)
-![Uptime](https://img.shields.io/badge/failover-3_tier-22c55e?style=flat-square)
-
-Local compute (ML, TTS, scraping, agent brain) + cloud Docker (n8n, databases, proxy, voice relay). Replaces $200-500/mo cloud infrastructure. SSL, reverse proxy, SSH tunnels, LaunchAgent management.
-
-</td>
-<td width="50%">
-
-#### Multi-Language TTS
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Cost](https://img.shields.io/badge/cost-$0%2Fmo-22c55e?style=flat-square)
-![Languages](https://img.shields.io/badge/langs-EN%2FES%2FZH-22c55e?style=flat-square)
-
-Piper + Edge TTS + espeak. Three-layer failover, cross-node recovery. Processes hundreds of voice interactions weekly. Replaced $200-400/mo projected cloud TTS costs with zero.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### J-Neutron Brain API
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![MCP](https://img.shields.io/badge/MCP-6_tools-8B5CF6?style=flat-square)
-![Qdrant](https://img.shields.io/badge/Qdrant-12_collections-24B47E?style=flat-square)
-
-6-tool MCP brain API: pull, push, prune, guard, score, query. Query planner across 12 Qdrant collections with score fusion reranker. Voicemail upload/serve endpoint. Traefik-fronted.
-
-</td>
-<td width="50%">
-
-#### Agentic CRM OS
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Tables](https://img.shields.io/badge/schema-15_tables-4169E1?style=flat-square)
-![Tenants](https://img.shields.io/badge/tenants-3-22c55e?style=flat-square)
-
-Multi-tenant CRM with **state machine** (`fn_transition_lead`, 12 states, FOR UPDATE locking). 9 n8n workflows, 3 active tenants (DealiQ, Gentic AI, VSAI). Lead lifecycle from ingestion to disposition.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Custom Model Training Pipeline
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Models](https://img.shields.io/badge/models-7_trained-f59e0b?style=flat-square)
-![MLX](https://img.shields.io/badge/MLX-LoRA-000?style=flat-square&logo=apple&logoColor=white)
-
-Full fine-tuning pipeline: synthetic data generation (adversarial personas), LoRA training on Qwen 2.5, MLX quantization, eval framework. **7 production models** across intent classification, deal qualification, and conversation engine.
-
-</td>
-<td width="50%">
-
-#### DealiQ Market Harvester
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Python](https://img.shields.io/badge/Python-harvester-3776AB?style=flat-square&logo=python&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-containerized-2496ED?style=flat-square)
-
-Automated real estate market data harvester. Property extraction with defuddle + site templates, iRELOP enrichment pipeline. Feeds DealiQ analytics and lead scoring.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### GenticOS
-![Status](https://img.shields.io/badge/status-built-f59e0b?style=flat-square)
-![BullMQ](https://img.shields.io/badge/BullMQ-workers-DC382D?style=flat-square)
-![OPA](https://img.shields.io/badge/OPA-policies-7D9199?style=flat-square)
-
-Full AI-powered RE operating system. Node 20, TypeScript, BullMQ job queue (8 tools, 5 concurrency), OPA runtime policies. Worker handles Twilio, Bland AI, email dispatch.
-
-</td>
-<td width="50%">
-
-#### MegaMindZ Knowledge Graph
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Supabase](https://img.shields.io/badge/Supabase-backend-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-
-Supabase-backed knowledge graph for cross-domain intelligence. Powers J-Neutron query planner and Clue's long-term memory.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Pipecat Voice Pipeline
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![WebRTC](https://img.shields.io/badge/WebRTC-LiveKit-blue?style=flat-square)
-![Cost](https://img.shields.io/badge/cost-$0.01%2Fcall-22c55e?style=flat-square)
-
-Real-time voice AI pipeline replacing Bland AI for lower-cost calls. LiveKit relay on cloud, Pipecat on local. **$0.01/call** vs $0.07+ on Bland.
-
-</td>
-<td width="50%">
-
-#### SearXNG Self-Hosted Search
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Privacy](https://img.shields.io/badge/privacy-zero_tracking-22c55e?style=flat-square)
-
-Self-hosted meta-search engine with proxy. Powers web search tools across Clue, KORA, and n8n workflows. Zero API costs, zero tracking, zero rate limits.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### AccompAgent Gateway
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Auth](https://img.shields.io/badge/auth-HMAC%2BIP-f59e0b?style=flat-square)
-![Tools](https://img.shields.io/badge/bridge-12_tools-22c55e?style=flat-square)
-
-HMAC + IP allowlist gateway for Accomplish task automation. MCP stdio bridge with 12 tools and 38 job types. Supabase backend.
-
-</td>
-<td width="50%">
-
-#### Scrapling Infrastructure
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Stealth](https://img.shields.io/badge/stealth-anti--bot-f59e0b?style=flat-square)
-![Dual](https://img.shields.io/badge/deploy-local%2Bcloud-22c55e?style=flat-square)
-
-Dual-deployment web scraping: local (native + MCP) + cloud Docker (HTTP for n8n). StealthyFetcher for anti-bot/Cloudflare bypass. Adaptive DOM parsing self-heals on site changes.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Gumroad Digital Product Store
-![Status](https://img.shields.io/badge/status-live-22c55e?style=flat-square)
-![Products](https://img.shields.io/badge/products-18-f59e0b?style=flat-square)
-![Store](https://img.shields.io/badge/store-genticai.gumroad.com-ff90e8?style=flat-square)
-
-**18 digital products** across 4 categories: n8n automation blueprints ($12-$97), social media content packs for 6 verticals ($12-$77), AI content creator bundles ($17-$47), and lead generation systems ($49-$97). Auto-delivered via Resend.
-
-**[genticai.gumroad.com](https://genticai.gumroad.com)**
-
-</td>
-<td width="50%">
-
-#### Revenue Infrastructure
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Stripe](https://img.shields.io/badge/Stripe-reconciliation-635BFF?style=flat-square&logo=stripe&logoColor=white)
-
-Stripe event tracking, subscription management, MRR snapshots, daily revenue reconciliation (1 PM UTC cron). PG schema `revenue` with targets and actuals.
-
-</td>
-</tr>
-</table>
-
-<tr>
-<td width="50%">
-
-#### KORA Tactical Agent
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![LLM](https://img.shields.io/badge/chain-gemma4_>_kimi_>_gemini-22c55e?style=flat-square)
-
-Autonomous operations agent. Owns voice ops, Gumroad, pipeline execution. Peer to the orchestrator agent (not subordinate). Private interface. $0 LLM chain (gemma4:e4b > kimi-k2 > gemini-flash-lite). Zombie prevention, port-check before launch.
-
-</td>
-<td width="50%">
-
-#### OpenClaw Broker v1
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![API](https://img.shields.io/badge/REST-gateway-26A5E4?style=flat-square)
-![Tiers](https://img.shields.io/badge/pricing-$50--$5997-f59e0b?style=flat-square)
-
-SaaS REST API gateway at broker.gentic.pro. Multi-tenant agent execution engine with governance gates (AuthN, AuthZ, Policy, Budget, Redact, Audit). Sandbox to Enterprise pricing.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Gentic Lead Pipeline
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![HubSpot](https://img.shields.io/badge/HubSpot-auto_deals-FF7A59?style=flat-square)
-![Pipeline](https://img.shields.io/badge/webhook-to_CRM-22c55e?style=flat-square)
-
-Webhook > validate > iRELOP score > PostgreSQL > Telegram alert > HubSpot auto-deal creation. HOT/WARM/COOL leads auto-create contacts + deals with AI-generated strategies.
-
-</td>
-<td width="50%">
-
-#### Gentic Conversation Engine
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![WebSocket](https://img.shields.io/badge/WebSocket-realtime-blue?style=flat-square)
-![SMS](https://img.shields.io/badge/Twilio-SMS-F22F46?style=flat-square)
-
-AI advisor "Alex" via WebSocket (wss://api.gentic.pro/ws). SMS conversation engine with 10-question state tracker, session management per phone number (1hr TTL). Twilio toll-free integrated.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Outreach Dispatch Pipeline
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Cron](https://img.shields.io/badge/cron-every_5min-f59e0b?style=flat-square)
-![Channels](https://img.shields.io/badge/SMS_%2B_Email-drip-22c55e?style=flat-square)
-
-n8n cron every 5 min (8AM-8PM Pacific). WARM: 4-stage SMS drip (days 1,3,7,14). COOL: 4-stage email drip (days 1,5,10,20). Twilio SMS + Resend email.
-
-</td>
-<td width="50%">
-
-#### GAN Lead Pipeline
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Architecture](https://img.shields.io/badge/agents-Strategist_%2B_Auditor-8B5CF6?style=flat-square)
-
-iRELOP GAN Pipeline: Strategist agent generates offer strategies, Auditor validates. Follow-up scheduling. 5 PG tables. Contract-based qualification with disposition tracking.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Property Extractor
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Defuddle](https://img.shields.io/badge/defuddle-extraction-22c55e?style=flat-square)
-
-DealiQ property data extractor using defuddle + site-specific templates. Pulls property details from listing URLs, enriches with iRELOP scoring. Feeds deal analysis pipeline.
-
-</td>
-<td width="50%">
-
-#### Security Sweep Tool
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Phases](https://img.shields.io/badge/phases-7-DC382D?style=flat-square)
-![Nuclei](https://img.shields.io/badge/Nuclei_%2B_Trivy-scanners-f59e0b?style=flat-square)
-
-Production security sweep (`~/bin/security-sweep`). 7-phase audit: port scan, container audit, SSL check, dependency scan, secret detection, Nuclei vuln scan, Trivy image scan. Telegram alerts.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Social Content Funnel
-![Status](https://img.shields.io/badge/status-built-f59e0b?style=flat-square)
-![n8n](https://img.shields.io/badge/n8n-4_workflows-EA4B71?style=flat-square)
-
-Content distribution pipeline: Distributor v2, Generate, Approval (Airtable), Lead Capture. HubSpot integration, Telegram notifications. Automated social media content across platforms.
-
-</td>
-<td width="50%">
-
-#### Smart AI Router
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![n8n](https://img.shields.io/badge/n8n-webhook-EA4B71?style=flat-square)
-![Models](https://img.shields.io/badge/routes-multi_model-8B5CF6?style=flat-square)
-
-General-purpose LLM routing workflow. Receives requests via webhook, selects optimal model based on task complexity and cost constraints. Returns unified response format.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### OpenClaw Guardian
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Watchdog](https://img.shields.io/badge/type-watchdog-DC382D?style=flat-square)
-
-Spend monitor + health checker + auto-kill. Tracks hourly/daily LLM spend, kills gateway if thresholds exceeded ($5/hr, $20/day). VPS container health via SSH. Max 3 kills/day with cooldown.
-
-</td>
-<td width="50%">
-
-#### Memory Writer + Watchdog
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![LaunchAgent](https://img.shields.io/badge/managed-launchd-000?style=flat-square)
-
-Automated memory persistence pipeline. Syncs conversation learnings, feedback, and project state to persistent storage. Watchdog ensures memory services stay healthy.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Claw-Kanban
-![Status](https://img.shields.io/badge/status-built-f59e0b?style=flat-square)
-![Multi-Agent](https://img.shields.io/badge/routes-Claude_%2B_Codex_%2B_Gemini-8B5CF6?style=flat-square)
-
-Multi-agent task routing kanban board. Routes tasks to Claude, Codex, Gemini, and other AI agents based on task type and model capability. Visual pipeline management.
-
-</td>
-<td width="50%">
-
-#### SSH Tunnel Architecture
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Tunnels](https://img.shields.io/badge/tunnels-4_active-22c55e?style=flat-square)
-
-4 persistent SSH tunnels (J-Neutron, PostgreSQL, MLX, Extractor) connecting local compute to cloud control plane. LaunchAgent-managed with auto-reconnect. Cloudflared tunnel for additional routing.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### prop-enricher: $0/mo Lead Enrichment
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Cost](https://img.shields.io/badge/cost-$0%2Fmo-22c55e?style=flat-square)
-![Markets](https://img.shields.io/badge/markets-NV%2FAZ%2FFL%2FNC%2FSC%2FTX-f59e0b?style=flat-square)
-
-FastAPI service wrapping HomeHarvest (Realtor.com). Returns estimated value, equity (30yr amortization model), years owned, tax annual — no API key required. Deployed as VPS Docker container with semaphore-serialized rate limiting. Feeds iRELOP pipeline at $0/month vs $200+/mo BatchData.
-
-</td>
-<td width="50%">
-
-#### Operator Memory Architecture
-![Status](https://img.shields.io/badge/status-live-22c55e?style=flat-square)
-![Tiers](https://img.shields.io/badge/tiers-5_memory-8B5CF6?style=flat-square)
-![MCP](https://img.shields.io/badge/MCP-4_tools-22c55e?style=flat-square)
-
-Production blueprint for tiered agent cognition: Working / Episodic / Semantic / Financial / Risk memory. Includes schemas, poisoning defenses, reflection prompts, cost model, and MCP integration spec. Interactive reference at [stack.gentic.pro/stack](https://stack.gentic.pro/stack).
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### Ceiba Core: Agent Execution Control Plane
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Gateway](https://img.shields.io/badge/ceiba.agency-live-22c55e?style=flat-square)
-![Policies](https://img.shields.io/badge/policies-10-f59e0b?style=flat-square)
-
-Policy-enforced execution control plane for autonomous agents. Redis-backed gateway, 6 DB tables, 10 active policies, 2 tenants. Telegram webhook for approval-gated actions. Prevents agents from executing without policy clearance.
-
-**[ceiba.agency](https://ceiba.agency)**
-
-</td>
-<td width="50%">
-
-#### Langfuse v3: LLM Observability
-![Status](https://img.shields.io/badge/status-production-22c55e?style=flat-square)
-![Self-Hosted](https://img.shields.io/badge/self--hosted-trace.gentic.pro-22c55e?style=flat-square)
-
-Self-hosted Langfuse v3 at `trace.gentic.pro`. Full LLM tracing, cost tracking, and prompt versioning wired into OpenClaw + KORA. Zero vendor dependency, all traces on-prem.
-
-**[trace.gentic.pro](https://trace.gentic.pro)**
-
-</td>
-</tr>
-</table>
+[Full case study →](./CASE_STUDIES.md#conversation-engine)
 
 ---
 
-## Featured Projects
+### 2. Ceiba Core — Agent Execution Control Plane
 
-### [Arachne Swarm: AI Agent Orchestration Dashboard](projects/arachne-swarm.md)
-Full-stack agent orchestration platform. Real-time spider web visualization, Kanban pipeline management, budget controls, multi-tenant isolation. Next.js + WebSocket + PostgreSQL. **Live at [swarm.gentic.pro](https://swarm.gentic.pro)**
+**The work:** Policy-enforced execution gateway for autonomous agents. Redis-backed, 6 DB tables, 10 active runtime policies. Telegram approval webhooks for high-stakes actions. Prevents agents from executing without policy clearance.
 
-### [Arachne Claw: Self-Serve AI Agent Sandbox](projects/arachne-claw.md)
-$50/mo product: 7 AI agents (research, lead scoring, competitor intel, content briefs, outreach, reviews, SEO audit). Dashboard + email delivery + REST API. Stripe billing, automated provisioning, upgrade funnel to enterprise tiers. **Live at [swarm.gentic.pro/claw](https://swarm.gentic.pro/claw)**
+**Why it matters:** As agents get more capable, the bottleneck shifts from "can the agent do it" to "should the agent do it without asking." Ceiba is a working answer to that — a policy plane that lets agents move fast on cleared work and pauses for approval on the rest.
 
-### [Markspace Protocol: Multi-Agent Coordination](projects/markspace.md)
-Stigmergy-based coordination protocol replacing direct webhook messaging between AI agents. Guard-enforced scopes, 4-tier autonomy model (autonomous / notify / approval / blocked), conflict resolution, peer sync via HMAC. Novel architecture for production agent fleets.
+**Stack:** Redis, Postgres, OPA-style policy DSL, HMAC-signed approvals
 
-### [VSAI Intent Classifier: Custom Fine-Tuned Model](projects/vsai-intent-model.md)
-Fine-tuned **Qwen 2.5 1.5B with LoRA** for real-time voice call intent classification. 9-class model running locally on MLX at $0/month with Ollama failover. 3-tier cascade: MLX, Ollama, cloud fallback.
+**Live:** [ceiba.agency](https://ceiba.agency)
 
-### [Hybrid Compute Architecture](architecture/hybrid-compute.md)
-Local compute node + cloud control plane. Runs n8n, Qdrant RAG, PostgreSQL, Redis, reverse proxy with SSL, custom MCP servers. All orchestrated for zero-downtime failover.
-
-### [Local TTS Infrastructure](projects/local-tts.md)
-Multi-language text-to-speech (EN/ES/ZH) via Piper/Edge TTS with espeak fallback. Full local + cloud failover. **$0/month operating cost.**
-
-### [iRELOP Lead Scoring Engine](projects/irelop-scoring.md)
-Proprietary 100-point lead qualification model weighting Motivation (40), Opportunity (35), and Profile (25) signals. Powers automated routing across HOT/WARM/COOL/PASS tiers with voice agent dispatch.
-
-### [Conversation Engine v5](projects/conversation-engine.md)
-Inline directive architecture for AI-guided phone conversations. State tracker injects dynamic prompts per-turn. Synthetic training pipeline generating 1,500+ multi-turn conversations with adversarial seller personas. Handles evasive, emotional, and resistant callers.
-
-### [n8n Workflow Engine](projects/n8n-workflows.md)
-66 production workflows handling lead ingestion, qualification, voice agent orchestration, CRM sync (HubSpot), drip campaigns, revenue reconciliation, and real-time Telegram alerting across multiple business verticals.
-
-### [prop-enricher: $0/mo Property Enrichment](projects/prop-enricher.md)
-FastAPI microservice wrapping HomeHarvest (Realtor.com). No API key, no cost. Returns estimated value, equity via 30yr amortization model, years owned, tax data. Deployed on VPS Docker, semaphore-serialized. Feeds iRELOP scoring pipeline across NV, AZ, FL, NC, SC, TX.
-
-### [Operator Memory Architecture](https://stack.gentic.pro/stack)
-Production blueprint for tiered agent cognition. 5-tier model (Working / Episodic / Semantic / Financial / Risk) with schemas, poisoning defenses, reflection prompts, cost model, and MCP integration spec. Live at [stack.gentic.pro/stack](https://stack.gentic.pro/stack).
-
-### [Scrapling Infrastructure](projects/scrapling-infra.md)
-Dual-deployment web scraping: local node (native + MCP server) + cloud Docker (HTTP MCP for n8n). StealthyFetcher for anti-bot/Cloudflare bypass. Adaptive parsing self-heals on DOM changes.
+[Full case study →](./CASE_STUDIES.md#ceiba-core)
 
 ---
+
+### 3. Arachne Swarm — Agent Orchestration Dashboard
+
+**The work:** Real-time multi-agent dashboard with animated visualization, Kanban pipeline, budget gauge, multi-tenant isolation, Stripe billing. Built on top of Markspace, a stigmergy-based coordination protocol where agents write marks (intents/actions/observations) into a shared space rather than direct webhook messaging.
+
+**Why it matters:** Most agent platforms hardcode agent-to-agent communication via webhooks, which doesn't scale beyond 3-4 agents. Stigmergy lets you grow the agent fleet without rewriting routing every time.
+
+**Stack:** Next.js, WebSocket, Postgres, Stripe, custom canvas rendering
+
+**Live:** [swarm.gentic.pro](https://swarm.gentic.pro) · **Sandbox:** [swarm.gentic.pro/claw](https://swarm.gentic.pro/claw)
+
+[Full case study →](./CASE_STUDIES.md#arachne-swarm)
+
+---
+
+## Other Production Systems
+
+<details>
+<summary><b>Custom model training, voice infrastructure, lead pipelines, observability — click to expand</b></summary>
+
+| System | What It Does | Stack |
+|---|---|---|
+| **VSAI Intent Classifier** | Fine-tuned 9-class voice intent model, 95.5% accuracy, $0/mo inference | Qwen 2.5, LoRA, MLX |
+| **Hybrid Compute Architecture** | Local Apple Silicon + cloud Docker, 3-tier failover | Docker, SSH tunnels, LaunchAgent |
+| **n8n Workflow Engine** | 66 production workflows: ingestion, scoring, voice dispatch, CRM, drip, reconciliation | n8n, Postgres, Redis |
+| **Multi-Language TTS** | EN/ES/ZH text-to-speech with three-layer failover | Piper, Edge TTS, espeak |
+| **prop-enricher** | $0/mo property data enrichment across 6 states (NV/AZ/FL/NC/SC/TX) | FastAPI, HomeHarvest |
+| **Scrapling Infrastructure** | Anti-bot/Cloudflare bypass with adaptive parsing, dual local/cloud | Scrapling, MCP |
+| **Agentic CRM OS** | Multi-tenant CRM with state machine (12 states, FOR UPDATE locking) | Postgres, n8n |
+| **Langfuse v3 (self-hosted)** | LLM tracing, cost tracking, prompt versioning, zero vendor dependency | Langfuse, Postgres |
+| **7-Phase Security Sweep** | Port scan, container audit, SSL, deps, secrets, Nuclei, Trivy | Bash, alerting integrations |
+| **Spend Guardian** | Auto-kill on $5/hr or $20/day LLM spend, max 3 kills/day | Custom watchdog |
+| **J-Neutron Brain API** | 6-tool MCP brain: pull/push/prune/guard/score/query across 12 Qdrant collections | FastAPI, MCP, Qdrant |
+| **Gumroad Digital Store** | 18 products: n8n blueprints, content packs, AI bundles, lead-gen systems | Gumroad, Resend |
+| **Revenue Infrastructure** | Stripe events, MRR snapshots, daily reconciliation cron | Stripe, Postgres |
+
+</details>
+
+---
+
 
 ## Technical Philosophy
 
@@ -675,14 +255,14 @@ A **novel stigmergy-based protocol** for coordinating autonomous AI agents in pr
 - **Peer sync**: HMAC-authenticated mark replication between agents
 - **Audit trail**: every Action mark persisted to PostgreSQL
 
-Currently coordinating **Clue** (orchestrator) and **KORA** (executor) across lead processing, voice calls, and deal analysis.
+Currently coordinating two production agents — an orchestrator and a tactical executor — across lead processing, voice calls, and deal analysis.
 
 </td>
 <td width="40%" align="center">
 
 ![Architecture](https://img.shields.io/badge/architecture-novel-8B5CF6?style=for-the-badge)
 
-![Agents](https://img.shields.io/badge/agents-Clue_%2B_KORA-22c55e?style=for-the-badge)
+![Agents](https://img.shields.io/badge/agents-orchestrator_%2B_executor-22c55e?style=for-the-badge)
 
 ![Scopes](https://img.shields.io/badge/scopes-6_domains-26A5E4?style=for-the-badge)
 
