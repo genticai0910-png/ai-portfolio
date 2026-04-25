@@ -15,7 +15,6 @@
 
 [![Arachne Claw](https://img.shields.io/badge/Arachne_Claw-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro/claw)
 [![Arachne Swarm](https://img.shields.io/badge/Arachne_Swarm-Live-22c55e?style=for-the-badge)](https://swarm.gentic.pro)
-
 [![Stack](https://img.shields.io/badge/Secure_AI_Stack-Live-8B5CF6?style=for-the-badge)](https://stack.gentic.pro/stack)
 
 </div>
@@ -287,8 +286,6 @@ Real outcomes, real numbers. No demos.
 ## Quick Links
 
 [Resume](RESUME.md) | [Case Studies](CASE_STUDIES.md) | [Open Source](open-source/) | [How I Work](HOW_I_WORK.md) | [Arachne Claw: swarm.gentic.pro/claw](https://swarm.gentic.pro/claw) | [Secure AI Stack: stack.gentic.pro/stack](https://stack.gentic.pro/stack)
-
----
 
 ---
 
