@@ -140,30 +140,9 @@
 ---
 
 
-## Technical Philosophy
-
-[Full engineering principles in How I Work](HOW_I_WORK.md)
-
-**Local-first, cost-zero where possible.** Every system starts with the question: *can this run on my own hardware at $0/month?* Custom model training, TTS, inference, scraping all run locally before touching cloud APIs.
-
-**Fallback chains, not single points of failure.** LLM routing: `local MLX -> Ollama -> Grok -> Gemini -> Haiku`. TTS: `Piper -> Edge TTS -> espeak`. Compute: `Local -> Cloud`. Every critical path has a backup.
-
-**Revenue-generating from day one.** Nothing ships as a demo. Every system processes real leads, serves real customers, or reduces real costs the day it goes live.
-
----
-
 ## Business Context
 
 **By the numbers:** 45+ production services, 32 cloud containers, 18 local managed services, 66 n8n workflows, 7 custom-trained models, 15+ PG schemas, 12 Qdrant collections, 18 digital products.
-
-These systems power three active businesses:
-
-- **DealiQ**. AI-powered real estate investment (Phoenix, Vegas, AZ, UT) processing 100+ leads/week
-- **Gentic AI**. AI automation platform for local SMBs ($1,497-$2,497/mo tiers, $57K MRR target)
-- **VoiceScheduleAI**. AI appointment scheduling with custom voice agents
-
-Plus one SaaS product:
-- **Arachne Claw**. $50/mo self-serve AI agent sandbox (top-of-funnel for Gentic AI)
 
 ---
 
@@ -273,17 +252,6 @@ Currently coordinating two production agents — an orchestrator and a tactical 
 </td>
 </tr>
 </table>
-
----
-
-## What I'm Looking For
-
-I'm open to roles and contracts involving:
-- AI/ML infrastructure engineering (full stack, own the pipeline)
-- Voice AI and conversational AI systems
-- AI agent development and multi-agent orchestration
-- Automation architecture and workflow design
-- Technical leadership for AI-first products
 
 ---
 
