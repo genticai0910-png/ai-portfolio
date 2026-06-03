@@ -1,6 +1,6 @@
 <div align="center">
 
-# Gabe Acosta | AI Infrastructure & Automation
+# Gabe Acosta | Governed MCP Spine
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -15,7 +15,7 @@
 ![Ollama](https://img.shields.io/badge/Ollama-ffffff?style=flat-square&logoColor=black)
 ![Pipecat](https://img.shields.io/badge/Pipecat-111827?style=flat-square)
 
-I build governed, cost-controlled, voice-first AI infrastructure for SMB and real estate workflows.
+I build a governed MCP spine for cost-controlled AI agents, voice workflows, and business automation.
 
 [Receipts](receipts/) | [Case Studies](CASE_STUDIES.md) | [Resume](RESUME.md) | [How I Work](HOW_I_WORK.md)
 
@@ -25,13 +25,17 @@ I build governed, cost-controlled, voice-first AI infrastructure for SMB and rea
 
 ## Start Here
 
-This account is organized around three proof pillars:
+This account is organized around one core system: a governed MCP spine.
 
-1. **Voice orchestration** - `voxmaestro`
-2. **Cost-controlled inference** - `smart-ai-router`
-3. **Business scoring and qualification** - iRELOP / DealiQ scoring contracts
+The spine is the control layer that decides which agents can use which tools, under which policy, budget, approval, and audit constraints.
 
-If you are reviewing the work technically, start with VoxMaestro first. It is the clearest product artifact.
+Start here:
+
+1. **Governed MCP spine** - policy, budget, approval, and audit boundaries for agent/tool execution
+2. **Voice orchestration** - `voxmaestro` as a deterministic voice workflow layer
+3. **Cost-controlled inference** - `smart-ai-router` as a routing utility on the spine
+
+If you are reviewing the work technically, start with the spine model first, then inspect VoxMaestro and the router as concrete modules.
 
 ---
 
@@ -39,13 +43,13 @@ If you are reviewing the work technically, start with VoxMaestro first. It is th
 
 | Domain | What to look for | Evidence status |
 |---|---|---|
+| Governed MCP spine | Tool access, policy checks, budget limits, approvals, receipts, and audit trails | Public-safe architecture surface |
 | Voice-agent orchestration | Deterministic state control, filler gates, handoff protocol | Public alpha in `voxmaestro` |
 | Cost-controlled inference | Local-first routing, provider fallback, budget-aware model choice | Scaffold in `smart-ai-router`; receipts needed |
-| Real estate intelligence | iRELOP scoring contracts and lead qualification flows | Public-safe examples only |
-| SMB automation | n8n workflow patterns for appointment-based businesses | Redacted inventory planned |
-| Governed agent execution | Policy, budget, approval, and audit boundaries | Architecture/case-study material |
+| Workflow automation | n8n workflow categories and tool bridges | Redacted inventory planned |
+| Business scoring interfaces | Public-safe contracts only, no formulas or private data | Placeholder receipts only |
 
-This portfolio is a public trust surface, not a complete source dump. Proprietary scoring formulas, customer data, credentials, private URLs, and internal infrastructure details are intentionally excluded.
+This portfolio is a public trust surface, not a complete source dump. Proprietary scoring formulas, customer data, credentials, private URLs, internal IPs, and private infrastructure details are intentionally excluded.
 
 ---
 
@@ -53,7 +57,7 @@ This portfolio is a public trust surface, not a complete source dump. Proprietar
 
 | Type | Meaning |
 |---|---|
-| Owned product | Built or actively shaped as part of the Gentic/DealiQ/VoiceScheduleAI stack |
+| Owned product | Built or actively shaped as part of the governed MCP and automation stack |
 | Public-safe scaffold | Exposes contracts/tests without proprietary business logic |
 | Reference/fork | Used for learning, integration research, or upstream experimentation |
 | Archived/research | Not part of the active product surface |
@@ -62,8 +66,8 @@ This distinction matters because this account contains both original product wor
 
 | Category | Repos |
 |---|---|
-| Owned product | `voxmaestro`, `smart-ai-router`, `ai-portfolio` |
-| Business IP / public-safe scaffold | iRELOP core, DealiQ scoring contracts |
+| Owned product | governed MCP spine, `voxmaestro`, `smart-ai-router`, `ai-portfolio` |
+| Business IP / public-safe scaffold | redacted scoring and qualification contracts |
 | Workflow infrastructure | `n8n-ollama-agents`, `awesome-n8n-templates` |
 | Voice research/reference | `pipecat`, `voice-ui-kit`, `voicemode`, `wyoming-piper` |
 | Research/reference forks | `gpt-researcher`, `autogpt`, `llm.c`, `trufflehog` |
@@ -74,10 +78,10 @@ This distinction matters because this account contains both original product wor
 
 | Project | What it proves | Status |
 |---|---|---|
+| Governed MCP spine | Agents use tools through policy, budget, approval, and audit boundaries | Public-safe architecture surface |
 | VoxMaestro | YAML-driven voice orchestration, deterministic state machines, filler gates, handoff protocol | Alpha, runnable |
 | smart-ai-router | Cost-aware multi-provider LLM routing concept | Public scaffold; needs package hardening |
-| ai-portfolio | Architecture, case studies, and public proof map | Active portfolio |
-| iRELOP core | Deterministic real estate scoring contracts | Public-safe scaffold planned |
+| ai-portfolio | Architecture, receipts, and public proof map | Active portfolio |
 
 ---
 
@@ -92,7 +96,7 @@ Current receipt backlog:
 | VSAI eval summary | Show evaluation method and headline accuracy without private datasets | Placeholder |
 | Local inference cost model | Show cloud-to-local cost comparison | Placeholder |
 | n8n inventory redacted | Show workflow categories without credentials or webhook URLs | Placeholder |
-| iRELOP score receipt example | Show deterministic scoring metadata without proprietary formulas | Placeholder |
+| Score receipt example | Show deterministic scoring metadata without proprietary formulas | Placeholder |
 | Security sweep redacted | Show hardening workflow without exposing infrastructure | Placeholder |
 
 Claims that are not linked to receipts should be treated as architecture context, not audited production proof.
@@ -106,10 +110,10 @@ Ingestion
   Voice transcripts, web forms, CRM events, workflow triggers
 
 Intelligence
-  Intent classification, iRELOP-style scoring contracts, RAG, local/cloud LLM routing
+  Intent classification, public-safe scoring contracts, RAG, local/cloud LLM routing
 
 Coordination
-  Guarded agent execution, policy scopes, budget controls, approval boundaries
+  Governed MCP spine, policy scopes, budget controls, approval boundaries
 
 Orchestration
   n8n workflows, Postgres state, Redis queues/cache, provider fallback paths
@@ -118,7 +122,7 @@ Action
   Voice agents, SMS/email handoff, CRM updates, reporting, alerts
 ```
 
-The strategy is local-first where possible, cloud where useful, and governed execution where business impact or customer communication is involved.
+The strategy is local-first where possible, cloud where useful, and governed execution wherever a model or agent can affect money, customer communication, or business records.
 
 ---
 
@@ -138,4 +142,4 @@ Case studies should be read as architecture and operating narratives unless a li
 
 - GitHub: [github.com/genticai0910-png](https://github.com/genticai0910-png)
 - Email: gabriel@gentic.pro
-- Focus: AI infrastructure, SMB automation, real estate intelligence, voice agents
+- Focus: governed MCP infrastructure, tool routing, cost controls, voice agents
