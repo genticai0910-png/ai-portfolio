@@ -1,0 +1,23 @@
+{
+  "receipt_type": "irelop_score_example",
+  "version": "public-safe-placeholder",
+  "input_summary": {
+    "lead_source": "redacted",
+    "property_market": "example_market",
+    "conversation_status": "example_status"
+  },
+  "score_summary": {
+    "tier": "WARM",
+    "confidence": "example",
+    "reason_codes": [
+      "motivation_signal_present",
+      "timeline_requires_follow_up",
+      "property_context_incomplete"
+    ]
+  },
+  "audit": {
+    "formula_redacted": true,
+    "customer_data_redacted": true,
+    "generated_for": "public_portfolio_receipt"
+  }
+}
